@@ -58,7 +58,7 @@ a:      fptr = fopen("TEST!.txt","a+");
 I:
         printf("Product Id: ");
         scanf("%d",&ID);
-        while(p.productID<=0){
+        while(ID<=0){
            printf("invalid!! Please enter a positive number for the ID : ");
            scanf("%d",&ID);
 		}
