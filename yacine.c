@@ -669,7 +669,7 @@ void read_products(){
 		gotoxy(87,6);
 		printf("Inv-Value\n");
 		q=8;
-		while(fscanf(f,"%d %s %f %s %s %c %d %f\n",&p.productID,&p.name,&p.price,&p.discp.color,&p.discp.type,&p.inventory,&p.Qt,&p.inventoryVAL)!=EOF)
+		while(fscanf(f,"%d %s %f %s %hd %c %d %f\n",&p.productID,&p.name,&p.price,&p.discp.color,&p.discp.type,&p.inventory,&p.Qt,&p.inventoryVAL)!=EOF)
 		{   gotoxy(5,q);
 		    printf("%d",p.productID);
 		    gotoxy(15,q);
@@ -955,7 +955,7 @@ void read_Product_ALL(){
 		gotoxy(87,6);
 		printf("Inv-Value\n");
 		q=8;
-		while(fscanf(f,"%d %s %f %s %s %c %d %f\n",&p.productID,&p.name,&p.price,&p.discp.color,&p.discp.type,&p.inventory,&p.Qt,&p.inventoryVAL)!=EOF)
+		while(fscanf(f,"%d %s %f %hd %s %c %d %f\n",&p.productID,&p.name,&p.price,&p.discp.color,&p.discp.type,&p.inventory,&p.Qt,&p.inventoryVAL)!=EOF)
 		{   gotoxy(5,q);
 		    printf("%d",p.productID);
 		    gotoxy(15,q);
