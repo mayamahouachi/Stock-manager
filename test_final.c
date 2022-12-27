@@ -57,10 +57,10 @@ a:      fptr = fopen("TEST!.txt","a+");
         printf("Give the product to add:------------------\n\n");
 I:
         printf("Product Id: ");
-        scanf("%d",&p.productID);
+        scanf("%d",&p.ID);
         while(p.productID<=0){
            printf("invalid!! Please enter a positive number for the ID : ");
-           scanf("%d",&p.productID);
+           scanf("%d",&p.ID);
 		}
 		 while(fscanf(fptr,"%d %s %f %s %s %c %d %f\n",&p.productID,&p.name,&p.price,&p.discp.color,&p.discp.type,&p.inventory,&p.Qt,&p.inventoryVAL)!=EOF){
 	    	if(ID==p.productID){
