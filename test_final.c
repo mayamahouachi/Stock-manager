@@ -679,10 +679,84 @@ void delete_items(){
 		int ret;
 		ret=rename("inter2.txt","TEST!.txt");
 }
-void show(FILE F){
+
+
+
+void show(FILE *f){
+	int i, q;
+	/*if((f=fopen("TEST!.txt","r"))==NULL)
+	{
 	
+		gotoxy(10,3);
+		printf("NO RECORDS");
+		printf("\n\t\tPress any key to go back to Menu.");
+		getch();
+		menu();
+
+
+	}
+	else
+	{*/
 	
+		gotoxy(0,5);
+			for(i=0;i<110;i++)
+		{
+			printf("-");
+		}
+		gotoxy(5,6);
+		printf("ID");
+		gotoxy(15,6);
+		printf("Name");
+		gotoxy(25,6);
+		printf("Price");
+		gotoxy(35,6);
+		printf("Color");
+		gotoxy(48,6);
+		printf("Type");
+		gotoxy(60,6);
+		printf("Inventorty");
+		gotoxy(74,6);
+		printf("Quantity");
+		gotoxy(87,6);
+		printf("Inv-Value\n");
+		q=8;
+		while(fscanf(f,"%d %s %f %s %s %c %d %f\n",&p.productID,&p.name,&p.price,&p.discp.color,&p.discp.type,&p.inventory,&p.Qt,&p.inventoryVAL)!=EOF)
+		{   gotoxy(5,q);
+		    printf("%d",p.productID);
+		    gotoxy(15,q);
+            printf("%s",p.name);
+            gotoxy(25,q);
+            printf("%.3f",p.price);
+            gotoxy(35,q);
+            printf("%s",p.discp.color);
+            gotoxy(48,q);
+            printf("%hd",p.discp.type);
+            gotoxy(60,q);
+            printf("%c",p.inventory);
+            gotoxy(74,q);
+            printf("%d",p.Qt);
+            gotoxy(87,q);
+            printf("%.3f",p.inventoryVAL);
+			q++;
+		}
+		printf("\n");
+		for(i=0;i<110;i++)
+			printf("-");
+	//}
+	fclose(f);
+	
+	printf("\nPress any key to go to Main Menu!");
+		getch();
+		menu();
 }
+
+
+
+
+
+
+
+
 void update(){
 	char path[]="TEST!.txt";
 	char nm[20],col[20],nmN[20],colS[20],inv,black[]="BLACK",blue[]="BLUE",red[]="RED";
