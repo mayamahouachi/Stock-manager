@@ -59,7 +59,7 @@ I:
         printf("Product Id: ");
         scanf("%d",&ID);
         while(ID<=0){
-           printf("invalid!! Please enter a positive number for the ID : ");
+           printf("INVALID !! Please enter a positive number for the ID : ");
            scanf("%d",&ID);
 		}//&p.productID,&p.name,&p.price,&p.discp.color,&p.discp.type,&p.inventory,&p.Qt,&p.inventoryVAL
 		fptr = fopen("TEST!.txt","a+");
@@ -88,7 +88,7 @@ I:
 			}
 			if (test==0)
 			{
-				printf("Name contain invalid character. Please 'Enter' again\n");
+				printf(" Please 'Enter' an alphabetic string \n");
 				getch();		
 			}
 		}while(test==0);
@@ -141,7 +141,7 @@ I:
         fprintf(fptr," %.3f",p.inventoryVAL);
        fclose(fptr);
     }
-    printf("If you wanna add new products press(y) Or press any other keys to return to the Main Menu");
+    printf("If you want to add new products press(y) Or press any other keys to return to the Main Menu");
 c=getch();
    system("cls");
    if(toupper(c)=='Y'){
@@ -162,7 +162,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 	printf("which serie of products do you wish to use ?");
 	printf("Group by :\n(1)name\n(2)price\n(3)color\n(4)type\n(5)Quantity\n(6)inventoryVAL\n");
 	
-	printf("Press the number corresponding to the type of sorts ?");
+	printf("Press the number corresponding to your selection ?");
 	scanf("%d",&i);
 	
 	//F.fselect=fopen("inter1.txt","w");
@@ -174,7 +174,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 		case 1:
 			label1:
 			
-			printf("give the product name:  ");
+			printf("Give the product name:  ");
 			scanf("%s",&nmS);
 			topper(nmS);
 			while (fscanf(f,"%d %s %f %s %hd %c %d %f\n",&pid,&nm,&pr,&col,&typ,&inv,&qt,&inval)==8){
@@ -285,14 +285,14 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 			}
 			}
 			if (ok==0){
-				printf("inavalable products,TRY another scale!!");
+				printf("Inavailable products,TRY another scale!!");
 				goto label2;
 			}
 			break;
 		case 3:
 			label3:
 			do{
-			printf("give the product color[BLUE,BLACK,RED]: ");
+			printf("Give the product color[BLUE,BLACK,RED]: ");
 			scanf("%s",&colS);
 			topper(colS);
 			//printf("%d\n",((strcmp(colS,black)!=0)&&(strcmp(colS,red)!=0)&&(strcmp(colS,blue)!=0)));
@@ -348,7 +348,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 			}
 			}
 			if (ok==0){
-				printf("wrong non existant product in such color !!");
+				printf("Wrong non existant product in such color !!");
 				goto label3;
 			}
 			break;
@@ -356,7 +356,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 			label4:
 			do{
 			
-			printf("give the product type[1,2,3]:");
+			printf("Give the product type[1,2,3]:");
 			scanf("%hd",&typS);
 			}
 			while ((typS!=1)&&(typS!=2)&&(typS!=3));
@@ -408,7 +408,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 			}
 			}
 			if (ok==0){
-				printf("Non existant product in type!!");
+				printf("No existant product in type!!");
 				goto label4;
 			}
 			break;
@@ -417,7 +417,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 			label6:
 			do{
 
-			printf("give minimum quantity : ");
+			printf("Give minimum quantity : ");
 			scanf("%d",&qtS);}
 			while(qtS<0);
 		
@@ -527,7 +527,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 			}
 			}
 			if (ok==0){
-				printf("wrong non existant product id!!");
+				printf("Wrong non existant product id!!");
 				goto label7;
 			}
 			break;
@@ -547,7 +547,7 @@ void delete_items(){
 d:
 	f = fopen("TEST!.txt","r+");
 		
-			printf("press any key to selet products to delete ");
+			printf("Press any key to selet products to delete ");
 			getch();
 			F=Select(f);
 			fclose(F.fselect);
@@ -580,13 +580,13 @@ void read_products(){
 
 		f = fopen("TEST!.txt","r");
 		
-			printf("PRESS any key to selet products to delete ");
+			printf("PRESS any key to select products to delete ");
 			getch();
 			F=Select(f);
 			fclose(F.fselect);
 		fclose(F.fconserve);
 		fclose(f);
-		system("cls");
+		
 		
 		int i, q;
 	
@@ -638,7 +638,7 @@ void read_products(){
 	
 	fclose(f);
 	remove("inter1.txt");////////////////
-	printf("\nPress any key to go to Main Menu!");
+	printf("\nPRESS any key to go to Main Menu!");
 		getch();
 		menu();
 
@@ -660,7 +660,7 @@ void update(){
     FILE *f;
     /*if((f=fopen(path,"r"))==NULL)
 	{
-		printf("no records");
+		printf("No Records");
         add();
     }*/
 	//else{
@@ -970,7 +970,7 @@ void menu(void)
 			update();
 			break;
 		case 4:
-			read_product();
+			//read_Product();
 			break;
 		case 5:
 			read_Product_ALL();
@@ -1011,7 +1011,7 @@ int main()
     printf("|\t\t\t\t\t\t\t\t\t\t\t\t\t|\n");
     printf("|\t\t\t\t\t\t\t\t\t\t\t\t\t|\n");
     printf("|\t\t\t\t\t\t\t\t\t\t\t\t\t|\n");
-    printf("|Press any key to continue  \t\t\t\t\t\t\t\t\t\t|\n");
+    printf("|PRESS any key to continue  \t\t\t\t\t\t\t\t\t\t|\n");
 
     printf(" -------------------------------------------------------------------------------------------------------\n");
 getch();
