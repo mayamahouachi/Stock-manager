@@ -558,7 +558,7 @@ d:
 		remove("inter1.txt");
 		int ret;
 		ret=rename("inter2.txt","TEST!.txt");
-	 printf("If you wanna delete another product press(y) Or press any other keys to return to the Main Menu");
+	 printf("If you want to delete another product press(y) Or press any other keys to return to the Main Menu");
         c=getch();
         system("cls");
         if(toupper(c)=='Y'){
@@ -846,7 +846,7 @@ u:
 	}*/
 		
 //}
-	printf("If you wanna Update another set of products press(y) Or press any other keys to return to the Main Menu");
+	printf("If you want to Update another set of products press(y) Or press any other keys to return to the Main Menu");
         p=getch();
         system("cls");
         if(toupper(p)=='Y'){
