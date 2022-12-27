@@ -53,7 +53,7 @@ void add(){
            scanf("%d",&k);
 		}
     for(i=1;i<=k;i++){
-a:      fptr = fopen("TEST!.txt","a+");
+a:      //fptr = fopen("TEST!.txt","a+");
         printf("Give the product to add:------------------\n\n");
 I:
         printf("Product Id: ");
@@ -61,10 +61,12 @@ I:
         while(ID<=0){
            printf("invalid!! Please enter a positive number for the ID : ");
            scanf("%d",&ID);
-		}
-		 while(fscanf(fptr,"%d %s %f %s %s %c %d %f\n",&p.productID,&p.name,&p.price,&p.discp.color,&p.discp.type,&p.inventory,&p.Qt,&p.inventoryVAL)!=EOF){
+		}//&p.productID,&p.name,&p.price,&p.discp.color,&p.discp.type,&p.inventory,&p.Qt,&p.inventoryVAL
+		fptr = fopen("TEST!.txt","a+");
+		 while(fscanf(fptr,"%d %s %f %s %hd %c %d %f",&p.productID,&p.name,&p.price,&p.discp.color,&p.discp.type,&p.inventory,&p.Qt,&p.inventoryVAL)==8){
 	    	if(ID==p.productID){
 	    		printf("This product already exists\n");
+				fclose(fptr);
 	    		goto I;
 			}
 		}
