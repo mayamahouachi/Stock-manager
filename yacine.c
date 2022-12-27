@@ -568,7 +568,7 @@ void show(FILE *f){
         gotoxy(87,6);
         printf("Inv-Value\n");
         q=8;
-        while(fscanf(f,"%d %s %f %s %s %c %d %f\n",&p.productID,&p.name,&p.price,&p.discp.color,&p.discp.type,&p.inventory,&p.Qt,&p.inventoryVAL)!=EOF)
+        while(fscanf(f,"%d %s %f %s %hd %c %d %f\n",&p.productID,&p.name,&p.price,&p.discp.color,&p.discp.type,&p.inventory,&p.Qt,&p.inventoryVAL)!=EOF)
         {   gotoxy(5,q);
             printf("%d",p.productID);
             gotoxy(15,q);
@@ -741,7 +741,7 @@ u:
 			F.fconserve=fopen("inter2.txt","w");
 		}
 		//show(F.fselect);
-		printf("what do you want to update ? ");
+		printf("\nWHAT do you want to update ? ");
 		do{
 		printf("\n(1)productID\n(2)name\n(3)price\n(4)color\n(5)type\n(6)Quantity\n");
 		scanf("%d",&k);
