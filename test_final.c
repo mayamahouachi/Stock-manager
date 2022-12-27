@@ -158,7 +158,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 	char a[]="A",b[]="B",c[]="C";
 	check:
 	printf("which serie of products do you wish to use ?");
-	printf("Group by :\n(1)productID\n(2)name\n(3)price\n(4)color\n(5)type\n(6)Quantity\n(7)inventoryVAL\n");
+	printf("Group by :\n(1)name\n(2)price\n(3)color\n(4)type\n(5)Quantity\n(6)inventoryVAL\n");
 	
 	printf("Press the number corresponding to the type of sorts ?");
 	scanf("%d",&i);
@@ -168,7 +168,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
     fclose(F.fconserve);
 	ok=0;
 	switch(i){
-		case 1:
+		/*case 1:
 			
 			label:
 			
@@ -228,8 +228,8 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 				printf("wrong non existant product id!!");
 				goto label;
 			}
-			break;
-		case 2:
+			break;*/
+		case 1:
 			label1:
 			
 			printf("give the product name:  ");
@@ -287,7 +287,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 				goto label1;
 			}
 			break;
-		case 3:
+		case 2:
 			label2:
 			
 			printf("give maximum price of the product : ");
@@ -347,7 +347,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 				goto label2;
 			}
 			break;
-		case 4:
+		case 3:
 			label3:
 			do{
 			printf("give the product color[BLUE,BLACK,RED]: ");
@@ -410,7 +410,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 				goto label3;
 			}
 			break;
-		case 5:
+		case 4:
 			label4:
 			do{
 			
@@ -535,7 +535,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 				goto label5;
 			}
 			break;*/
-		case 6:
+		case 5:
 			label6:
 			do{
 
@@ -594,7 +594,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 				goto label6;
 			}
 			break;
-		case 7:
+		case 6:
 			label7:
 			printf("give maximum inventory value :");
 			scanf("%f",&invalMX);
