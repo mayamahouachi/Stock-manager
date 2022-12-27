@@ -586,7 +586,7 @@ void read_products(){
 			fclose(F.fselect);
 		fclose(F.fconserve);
 		fclose(f);
-		
+		system("cls");
 		
 		int i, q;
 	
@@ -970,7 +970,7 @@ void menu(void)
 			update();
 			break;
 		case 4:
-			//read_Product();
+			read_product();
 			break;
 		case 5:
 			read_Product_ALL();
