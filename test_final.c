@@ -37,7 +37,7 @@ struct files{
 	FILE *fconserve; 
 };
 void menu(void);
- void add(){ 
+void add(){ 
     struct product p;
     float t;
     int test;
@@ -146,6 +146,7 @@ c=getch();
    	goto a;
    }
    menu();
+}
 struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on voulait selectionnes et un autre rempli des donnees a ne pas toucher
 	int i,o;
 	struct files FL,F;
@@ -162,8 +163,8 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 	printf("Press the number corresponding to the type of sorts ?");
 	scanf("%d",&i);
 	
-	//F.fselect=fopen("C:\\YoussefENSI\\inter1.txt","w");
-	F.fconserve=fopen("C:\\YoussefENSI\\inter2.txt","w");
+	//F.fselect=fopen("inter1.txt","w");
+	F.fconserve=fopen("inter2.txt","w");
     fclose(F.fconserve);
 	ok=0;
 	switch(i){
@@ -181,7 +182,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					
 								if ((pid==p )&&(ok==1)){
 								//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
-								F.fselect=fopen("C:\\YoussefENSI\\inter1.txt","w");//w
+								F.fselect=fopen("inter1.txt","w");//w
 								fprintf(F.fselect,"%d",pid);
 								fprintf(F.fselect," %s",nm);
 								fprintf(F.fselect," %.3f",pr);
@@ -195,7 +196,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 						else{
 											if (pid==p ){
 														//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
-														F.fselect=fopen("C:\\YoussefENSI\\inter1.txt","a+");//a
+														F.fselect=fopen("inter1.txt","a+");//a
 														fprintf(F.fselect,"%d",pid);
 														fprintf(F.fselect," %s",nm);
 														fprintf(F.fselect," %.3f",pr);
@@ -208,7 +209,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 													}
 													else{
 														//printf("no sir-");
-														F.fconserve=fopen("C:\\YoussefENSI\\inter2.txt","a+");
+														F.fconserve=fopen("inter2.txt","a+");
 														fprintf(F.fconserve,"%d",pid);
 														fprintf(F.fconserve," %s",nm);
 														fprintf(F.fconserve," %.3f",pr);
@@ -241,7 +242,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					
 								if ((strcmp(nm,nmS) == 0 )&&(ok==1)){
 								//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
-								F.fselect=fopen("C:\\YoussefENSI\\inter1.txt","w");//w
+								F.fselect=fopen("inter1.txt","w");//w
 								fprintf(F.fselect,"%d",pid);
 								fprintf(F.fselect," %s",nm);
 								fprintf(F.fselect," %.3f",pr);
@@ -256,7 +257,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 						
 				if (strcmp(nm,nmS) == 0 ){// Les deux cha�nes sont �gales si vrai
 					
-					F.fselect=fopen("C:\\YoussefENSI\\inter1.txt","a+");
+					F.fselect=fopen("inter1.txt","a+");
 					fprintf(F.fselect,"%d",pid);
 					fprintf(F.fselect," %s",nm);
 					fprintf(F.fselect," %.3f",pr);
@@ -268,7 +269,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					fclose(F.fselect);
 				}
 				else{
-				F.fconserve=fopen("C:\\YoussefENSI\\inter2.txt","a+");
+				F.fconserve=fopen("inter2.txt","a+");
 					fprintf(F.fconserve,"%d",pid);
 					fprintf(F.fconserve," %s",nm);
 					fprintf(F.fconserve," %.3f",pr);
@@ -300,7 +301,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					
 								if ((pr>=prMN )&&(pr<=prMX)&&(ok==1)){
 								//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
-								F.fselect=fopen("C:\\YoussefENSI\\inter1.txt","w");//w
+								F.fselect=fopen("inter1.txt","w");//w
 								fprintf(F.fselect,"%d",pid);
 								fprintf(F.fselect," %s",nm);
 								fprintf(F.fselect," %.3f",pr);
@@ -316,7 +317,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 				
 				if ((pr>=prMN )&&(pr<=prMX)){
 					
-					F.fselect=fopen("C:\\YoussefENSI\\inter1.txt","a+");
+					F.fselect=fopen("inter1.txt","a+");
 					fprintf(F.fselect,"%d",pid);
 					fprintf(F.fselect," %s",nm);
 					fprintf(F.fselect," %.3f",pr);
@@ -328,7 +329,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					fclose(F.fselect);
 				}
 				else{
-					F.fconserve=fopen("C:\\YoussefENSI\\inter2.txt","a+");
+					F.fconserve=fopen("inter2.txt","a+");
 					fprintf(F.fconserve,"%d",pid);
 					fprintf(F.fconserve," %s",nm);
 					fprintf(F.fconserve," %.3f",pr);
@@ -363,7 +364,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					
 								if ((strcmp(colS,col)==0 )&&(ok==1)){
 								//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
-								F.fselect=fopen("C:\\YoussefENSI\\inter1.txt","w");//w
+								F.fselect=fopen("inter1.txt","w");//w
 								fprintf(F.fselect,"%d",pid);
 								fprintf(F.fselect," %s",nm);
 								fprintf(F.fselect," %.3f",pr);
@@ -379,7 +380,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 				
 				if (strcmp(colS,col)==0 ){
 					
-					F.fselect=fopen("C:\\YoussefENSI\\inter1.txt","a+");
+					F.fselect=fopen("inter1.txt","a+");
 					fprintf(F.fselect,"%d",pid);
 					fprintf(F.fselect," %s",nm);
 					fprintf(F.fselect," %.3f",pr);
@@ -391,7 +392,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					fclose(F.fselect);
 				}
 				else{
-					F.fconserve=fopen("C:\\YoussefENSI\\inter2.txt","a+");
+					F.fconserve=fopen("inter2.txt","a+");
 					fprintf(F.fconserve,"%d",pid);
 					fprintf(F.fconserve," %s",nm);
 					fprintf(F.fconserve," %.3f",pr);
@@ -424,7 +425,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					
 								if ((typ==typS )&&(ok==1)){
 								//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
-								F.fselect=fopen("C:\\YoussefENSI\\inter1.txt","w");//w
+								F.fselect=fopen("inter1.txt","w");//w
 								fprintf(F.fselect,"%d",pid);
 								fprintf(F.fselect," %s",nm);
 								fprintf(F.fselect," %.3f",pr);
@@ -439,7 +440,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 				
 				if (typ==typS ){
 					
-					F.fselect=fopen("C:\\YoussefENSI\\inter1.txt","a+");
+					F.fselect=fopen("inter1.txt","a+");
 					fprintf(F.fselect,"%d",pid);
 					fprintf(F.fselect," %s",nm);
 					fprintf(F.fselect," %.3f",pr);
@@ -451,7 +452,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					fclose(F.fselect);
 				}
 				else{
-				F.fconserve=fopen("C:\\YoussefENSI\\inter2.txt","a+");
+				F.fconserve=fopen("inter2.txt","a+");
 					fprintf(F.fconserve,"%d",pid);
 					fprintf(F.fconserve," %s",nm);
 					fprintf(F.fconserve," %.3f",pr);
@@ -489,7 +490,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					
 								if (strcmp(inv,invS)&&(ok==1)){
 								//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
-								F.fselect=fopen("C:\\YoussefENSI\\inter1.txt","w");//w
+								F.fselect=fopen("inter1.txt","w");//w
 								fprintf(F.fselect,"%d",pid);
 								fprintf(F.fselect," %s",nm);
 								fprintf(F.fselect," %.3f",pr);
@@ -504,7 +505,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 				
 				if (strcmp(inv,invS) ){
 					
-				F.fselect=fopen("C:\\YoussefENSI\\inter1.txt","a+");
+				F.fselect=fopen("inter1.txt","a+");
 					fprintf(F.fselect,"%d",pid);
 					fprintf(F.fselect," %s",nm);
 					fprintf(F.fselect," %.3f",pr);
@@ -516,7 +517,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					fclose(F.fselect);
 				}
 				else{
-					F.fconserve=fopen("C:\\YoussefENSI\\inter2.txt","a+");
+					F.fconserve=fopen("inter2.txt","a+");
 					fprintf(F.fconserve,"%d",pid);
 					fprintf(F.fconserve," %s",nm);
 					fprintf(F.fconserve," %.3f",pr);
@@ -549,7 +550,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					
 								if ((qtS <=qt ) &&(ok==1)){
 								//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
-								F.fselect=fopen("C:\\YoussefENSI\\inter1.txt","w");//w
+								F.fselect=fopen("inter1.txt","w");//w
 								fprintf(F.fselect,"%d",pid);
 								fprintf(F.fselect," %s",nm);
 								fprintf(F.fselect," %.3f",pr);
@@ -563,7 +564,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 						else{	
 				if (qtS <=qt ){
 					
-				F.fselect=fopen("C:\\YoussefENSI\\inter1.txt","a+");
+				F.fselect=fopen("inter1.txt","a+");
 					fprintf(F.fselect,"%d",pid);
 					fprintf(F.fselect," %s",nm);
 					fprintf(F.fselect," %.3f",pr);
@@ -575,7 +576,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					fclose(F.fselect);
 				}
 				else{
-					F.fconserve=fopen("C:\\YoussefENSI\\inter2.txt","a+");
+					F.fconserve=fopen("inter2.txt","a+");
 					fprintf(F.fconserve,"%d",pid);
 					fprintf(F.fconserve," %s",nm);
 					fprintf(F.fconserve," %.3f",pr);
@@ -607,7 +608,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					
 								if ((inval>=invalMN)&&(inval<=invalMX) &&(ok==1)){
 								//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
-								F.fselect=fopen("C:\\YoussefENSI\\inter1.txt","w");//w
+								F.fselect=fopen("inter1.txt","w");//w
 								fprintf(F.fselect,"%d",pid);
 								fprintf(F.fselect," %s",nm);
 								fprintf(F.fselect," %.3f",pr);
@@ -622,7 +623,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 				
 				if ((inval>=invalMN)&&(inval<=invalMX) ){
 					
-					F.fselect=fopen("C:\\YoussefENSI\\inter1.txt","a+");
+					F.fselect=fopen("inter1.txt","a+");
 					fprintf(F.fselect,"%d",pid);
 					fprintf(F.fselect," %s",nm);
 					fprintf(F.fselect," %.3f",pr);
@@ -634,7 +635,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					fclose(F.fselect);
 				}
 				else{
-					F.fconserve=fopen("C:\\YoussefENSI\\inter2.txt","a+");
+					F.fconserve=fopen("inter2.txt","a+");
 					fprintf(F.fconserve,"%d",pid);
 					fprintf(F.fconserve," %s",nm);
 					fprintf(F.fconserve," %.3f",pr);
@@ -655,8 +656,8 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 		default :	goto check;	
 	}
 	
-		F.fselect=fopen("C:\\YoussefENSI\\inter1.txt","r+");
-		F.fconserve=fopen("C:\\YoussefENSI\\inter2.txt","a+");
+		F.fselect=fopen("inter1.txt","r+");
+		F.fconserve=fopen("inter2.txt","a+");
 		return(F);
 //noublier pas de les fermer apres les operations
 }
@@ -674,9 +675,9 @@ void delete_items(){
 		fclose(f);
 		int rem;
 		rem=remove("TEST!.txt");
-		remove("C:\\YoussefENSI\\inter1.txt");
+		remove("inter1.txt");
 		int ret;
-		ret=rename("C:\\YoussefENSI\\inter2.txt","TEST!.txt");
+		ret=rename("inter2.txt","TEST!.txt");
 }
 void show(FILE F){
 	
@@ -708,7 +709,7 @@ void update(){
 		}
 		else {
 			F.fselect=f;
-			F.fconserve=fopen("C:\\YoussefENSI\\inter2.txt","w");
+			F.fconserve=fopen("inter2.txt","w");
 		}
 		//show(F.fselect);
 		printf("what do you want to update ? ");
@@ -856,7 +857,7 @@ void update(){
 		fclose(f);
 		int rem;
 		rem=remove(path);
-		remove("C:\\YoussefENSI\\inter1.txt");
+		remove("inter1.txt");
 		/*if (rem!= 0) {
 			/* handle error 
 			printf("mahabech file yetfasakh");
@@ -865,7 +866,7 @@ void update(){
 		
 		
 			int ret;
-		ret=rename("C:\\YoussefENSI\\inter2.txt",path);
+		ret=rename("inter2.txt",path);
 
 	/*if(ret == 0) 
 	{
@@ -1041,6 +1042,11 @@ system("cls");
 menu();
 }
 	
+
+
+
+
+
 
 
 
