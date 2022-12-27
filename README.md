@@ -10,8 +10,9 @@
 - **Add** products to database.
 - **Update** database grouped by your requirements.
 - **Show** database grouped by your requirements
-- **show** database.
+- **Show** database.
 - **Delete** all items. 
+- **Delete** an item.
 
 
 ## Deployment:
