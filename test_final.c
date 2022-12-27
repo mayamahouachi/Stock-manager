@@ -40,7 +40,7 @@ void menu(void);
 void add(){ 
     struct product p;
     float t;
-    int test;
+    int test,ID;
     FILE *fptr;
        int k,j,i;
        char c;
