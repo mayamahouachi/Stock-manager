@@ -168,66 +168,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
     fclose(F.fconserve);
 	ok=0;
 	switch(i){
-		/*case 1:
-			
-			label:
-			
-			printf("give the product id:");
-			scanf("%d",&p);
-			while (fscanf(f,"%d %s %f %s %hd %c %d %f",&pid,&nm,&pr,&col,&typ,&inv,&qt,&inval)==8){
-				
-				if (pid==p ){
-					ok++;}
-					
-					
-								if ((pid==p )&&(ok==1)){
-								//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
-								F.fselect=fopen("inter1.txt","w");//w
-								fprintf(F.fselect,"%d",pid);
-								fprintf(F.fselect," %s",nm);
-								fprintf(F.fselect," %.3f",pr);
-								fprintf(F.fselect," %s",col);
-								fprintf(F.fselect," %hd",typ);
-								fprintf(F.fselect," %c",inv);
-								fprintf(F.fselect," %d",qt);
-								fprintf(F.fselect," %.3f\n",inval);
-								fclose(F.fselect);
-						}
-						else{
-											if (pid==p ){
-														//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
-														F.fselect=fopen("inter1.txt","a+");//a
-														fprintf(F.fselect,"%d",pid);
-														fprintf(F.fselect," %s",nm);
-														fprintf(F.fselect," %.3f",pr);
-														fprintf(F.fselect," %s",col);
-														fprintf(F.fselect," %hd",typ);
-														fprintf(F.fselect," %c",inv);
-														fprintf(F.fselect," %d",qt);
-														fprintf(F.fselect," %.3f\n",inval);
-														fclose(F.fselect);
-													}
-													else{
-														//printf("no sir-");
-														F.fconserve=fopen("inter2.txt","a+");
-														fprintf(F.fconserve,"%d",pid);
-														fprintf(F.fconserve," %s",nm);
-														fprintf(F.fconserve," %.3f",pr);
-														fprintf(F.fconserve," %s",col);
-														fprintf(F.fconserve," %hd",typ);
-														fprintf(F.fconserve," %c",inv);
-														fprintf(F.fconserve," %d",qt);
-														fprintf(F.fconserve," %.3f\n",inval);
-														fclose(F.fconserve);
-													}
-						}
-				
-			}
-			if (ok==0){
-				printf("wrong non existant product id!!");
-				goto label;
-			}
-			break;*/
+	
 		case 1:
 			label1:
 			
@@ -469,71 +410,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 				goto label4;
 			}
 			break;
-		/*case 8:
-			label5:
-			do {
-			
-			printf("give the invantory{A,B,C}:");
-			scanf("%s",invS);
-			topper(invS);
-			//printf("%c",invS);
-			}
-			while ((strcmp(invS,a)!=0) && (strcmp(invS,b)!=0) && (strcmp(invS,c)!=0));
-			
-			while (fscanf(f,"%d %s %f %s %hd %c %d %f",&pid,&nm,&pr,&col,&typ,&inv,&qt,&inval)==8){
-				printf("%c",inv);
-				printf("%c\n",invS);
-			if (strcmp(inv,invS) ){
-					ok++;}
-					
-					
-								if (strcmp(inv,invS)&&(ok==1)){
-								//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
-								F.fselect=fopen("inter1.txt","w");//w
-								fprintf(F.fselect,"%d",pid);
-								fprintf(F.fselect," %s",nm);
-								fprintf(F.fselect," %.3f",pr);
-								fprintf(F.fselect," %s",col);
-								fprintf(F.fselect," %hd",typ);
-								fprintf(F.fselect," %c",inv);
-								fprintf(F.fselect," %d",qt);
-								fprintf(F.fselect," %.3f\n",inval);
-								fclose(F.fselect);
-						}
-						else{	
-				
-				if (strcmp(inv,invS) ){
-					
-				F.fselect=fopen("inter1.txt","a+");
-					fprintf(F.fselect,"%d",pid);
-					fprintf(F.fselect," %s",nm);
-					fprintf(F.fselect," %.3f",pr);
-					fprintf(F.fselect," %s",col);
-					fprintf(F.fselect," %hd",typ);
-					fprintf(F.fselect," %c",inv);
-					fprintf(F.fselect," %d",qt);
-					fprintf(F.fselect," %.3f\n",inval);
-					fclose(F.fselect);
-				}
-				else{
-					F.fconserve=fopen("inter2.txt","a+");
-					fprintf(F.fconserve,"%d",pid);
-					fprintf(F.fconserve," %s",nm);
-					fprintf(F.fconserve," %.3f",pr);
-					fprintf(F.fconserve," %s",col);
-					fprintf(F.fconserve," %hd",typ);
-					fprintf(F.fconserve," %c",inv);
-					fprintf(F.fconserve," %d",qt);
-					fprintf(F.fconserve," %.3f\n",inval);
-					fclose(F.fconserve);
-				}
-			}
-			}
-			if (ok==0){
-				printf("Non existant product in the invantory!!");
-				goto label5;
-			}
-			break;*/
+		
 		case 5:
 			label6:
 			do{
@@ -1139,7 +1016,6 @@ getch();
 system("cls");
 menu();
 }
-	
-//hvdifgouvsdouwoidbobsdob
+
 
 
