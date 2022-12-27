@@ -44,7 +44,7 @@ void add(){
     FILE *fptr;
        int k,j,i;
        char c;
-    //fptr = fopen("TEST1.txt","a+");
+    //fptr = fopen("TEST!.txt","a+");
 
     printf("How many items would you like to add? ");
     scanf("%d",&k);
@@ -53,7 +53,7 @@ void add(){
            scanf("%d",&k);
 		}
     for(i=1;i<=k;i++){
-a:      fptr = fopen("TEST1.txt","a+");
+a:      fptr = fopen("TEST!.txt","a+");
         printf("Give the product to add:------------------\n\n");
 I:
         printf("Product Id: ");
@@ -888,7 +888,7 @@ void update(){
 void read_Product_ALL(){
 		FILE *f;
 	int i, q;
-	if((f=fopen("TEST1.txt","r"))==NULL)
+	if((f=fopen("TEST!.txt","r"))==NULL)
 	{
 	
 		gotoxy(10,3);
@@ -959,7 +959,7 @@ void delete_All(){
 	printf("Do you really want to delete all the products?\nif yes press(y) \nif no press any other key and return to the main menu");
 	c=getch();
 	if (toupper(c)=='Y'){
-		remove("TEST1.txt");
+		remove("TEST!.txt");
 		printf("\nPress any key to go to Main Menu!");
 		getch();
 		menu();
