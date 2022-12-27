@@ -115,7 +115,7 @@ I:
         printf("Inventary[A,B,C]: ");
         scanf("%s",&p.inventory);
         p.inventory=toupper(p.inventory);
-        while((p.inventory!='A')&&(p.inventory!='B')&&(p.inventory!='C')&&(strlen(p.inventory))!=1){
+        while((p.inventory!='A')&&(p.inventory!='B')&&(p.inventory!='C')){
         	printf("Wrong!! Please enter [A,B,C]: ");
         	scanf("%s",&p.inventory);
         	p.inventory=toupper( p.inventory);
@@ -664,6 +664,8 @@ void delete_items(){
 	int i;
 	struct files F;
 	FILE *f;
+	char c;
+d:
 	f = fopen("TEST!.txt","r+");
 		
 			printf("press any key to selet products to delete ");
@@ -677,6 +679,13 @@ void delete_items(){
 		remove("inter1.txt");
 		int ret;
 		ret=rename("inter2.txt","TEST!.txt");
+	 printf("If you wanna delete another product press(y) Or press any other keys to return to the Main Menu");
+        c=getch();
+        system("cls");
+        if(toupper(c)=='Y'){
+   	    goto d;
+        }
+         menu();	
 }
 ///////////////////////////////////////////////////
 ////////////////////////////////////////////
@@ -762,6 +771,7 @@ void update(){
 	int pid,pidn,qt,k,qtS,c=0;
 	short typ,typS;
 	int i;
+	char p;
 	struct files F;
     FILE *f;
     /*if((f=fopen(path,"r"))==NULL)
@@ -770,6 +780,7 @@ void update(){
         add();
     }*/
 	//else{
+u:
 		f = fopen(path,"r+");
 		do{
 			printf("type (0) use products selection, type (1)to use all the products!");
@@ -956,6 +967,13 @@ void update(){
 	}
 	while (i!=1 && i!=0);
 //}
+		printf("If you wanna Update another product press(y) Or press any other keys to return to the Main Menu");
+        p=getch();
+        system("cls");
+        if(toupper(p)=='Y'){
+   	    goto u;
+        }
+         menu();
 }
 void read_Product_ALL(){
 		FILE *f;
