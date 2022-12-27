@@ -72,6 +72,7 @@ I:
         do
 		{   printf("Product Name: ");
             scanf("%s",&p.name);
+		   topper(p.name);
 			for (j=0; j<strlen(p.name); j++)
 			{	
 				if(isalpha(p.name[j])){
