@@ -6,13 +6,12 @@ features:
 _add  products to database
 _show database
 _update database
-_ show database grouped by your requirements
+_show database grouped by your requirements
 
 Deployment:
-Clone Stock-Manager-System Repository In Local Your Machine.
+Download Stock-Manager-System Repository In Local Your Machine.
 With dev C++, Open Downloaded Stock-Management-System Project.
 Run
-
 
 Built With:
 C++ dev
