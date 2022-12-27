@@ -569,76 +569,6 @@ d:
 ///////////////////////////////////////////////////
 ////////////////////////////////////////////
 
-void show(FILE *f){
-	int i, q;
-	/*if((f=fopen("TEST!.txt","r"))==NULL)
-	{
-	
-		gotoxy(10,3);
-		printf("NO RECORDS");
-		printf("\n\t\tPress any key to go back to Menu.");
-		getch();
-		menu();
-	}
-	else
-	{*/
-	
-		gotoxy(0,5);
-			for(i=0;i<110;i++)
-		{
-			printf("-");
-		}
-		gotoxy(5,6);
-		printf("ID");
-		gotoxy(15,6);
-		printf("Name");
-		gotoxy(25,6);
-		printf("Price");
-		gotoxy(35,6);
-		printf("Color");
-		gotoxy(48,6);
-		printf("Type");
-		gotoxy(60,6);
-		printf("Inventorty");
-		gotoxy(74,6);
-		printf("Quantity");
-		gotoxy(87,6);
-		printf("Inv-Value\n");
-		q=8;
-		while(fscanf(f,"%d %s %f %s %s %c %d %f\n",&p.productID,&p.name,&p.price,&p.discp.color,&p.discp.type,&p.inventory,&p.Qt,&p.inventoryVAL)!=EOF)
-		{   gotoxy(5,q);
-		    printf("%d",p.productID);
-		    gotoxy(15,q);
-            printf("%s",p.name);
-            gotoxy(25,q);
-            printf("%.3f",p.price);
-            gotoxy(35,q);
-            printf("%s",p.discp.color);
-            gotoxy(48,q);
-            printf("%hd",p.discp.type);
-            gotoxy(60,q);
-            printf("%c",p.inventory);
-            gotoxy(74,q);
-            printf("%d",p.Qt);
-            gotoxy(87,q);
-            printf("%.3f",p.inventoryVAL);
-			q++;
-		}
-		printf("\n");
-		for(i=0;i<110;i++)
-			printf("-");
-	//}
-	fclose(f);
-	
-	printf("\nPress any key to go to Main Menu!");
-		getch();
-		menu();
-}
-
-
-
-
-
 
 
 /////////////////////////////////////////////////////////
@@ -839,14 +769,9 @@ u:
 		printf("Error: unable to rename the file");
 		fprintf(stderr, "System error (%d): %s\n", errno, strerror(errno));
 	}*/
-		do{
 		
-		printf("do you want to see your updated list of projects ? (1)yes ,(0)no \n");
-		scanf("%d",i);
-	}
-	while (i!=1 && i!=0);
 //}
-		printf("If you wanna Update another product press(y) Or press any other keys to return to the Main Menu");
+	printf("If you wanna Update another set of products press(y) Or press any other keys to return to the Main Menu");
         p=getch();
         system("cls");
         if(toupper(p)=='Y'){
