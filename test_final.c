@@ -977,10 +977,12 @@ void menu(void)
 	printf("                                                                                          ");
 	printf("                                                                                          ");
 	printf("\n\t\tPress <1> Add Products");
-	printf("\n\t\tPress <2> Select Products");
-	printf("\n\t\tPress <3> Read ALL Items");
-	printf("\n\t\tPress <4> Delete ALL");
-	printf("\n\t\tPress <5> Exit!");	
+	printf("\n\t\tPress <2> delete Products");
+	printf("\n\t\tPress <3> Update Products");
+	printf("\n\t\tPress <4> Read Products");
+	printf("\n\t\tPress <5> Read ALL Products");
+	printf("\n\t\tPress <6> Delete ALL");
+	printf("\n\t\tPress <7> Exit!");	
 	
 	printf("\n\n\t\tEnter your choice: ");
 	scanf("%i", &choice);
@@ -993,15 +995,21 @@ void menu(void)
 			add();
 			break;
 		case 2:
-			delete_product();
+			delete_items();
 			break;
 		case 3:
-			read_Product_ALL();
+			update();
 			break;
 		case 4:
-			delete_All();
+			read_Product();
 			break;
 		case 5:
+			read_Product_ALL();
+			break;
+		case 6:
+			delete_All();
+			break;
+		case 7:
 		printf("System Exit");
 		exit(0);
 		break;
