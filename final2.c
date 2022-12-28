@@ -760,30 +760,14 @@ u:
 		F.fselect=fopen("inter1.txt","r+");
 		printf("\nWHAT do you want to update ? ");
 		do{
-		printf("\n(1)productID\n(2)name\n(3)price\n(4)color\n(5)type\n(6)Quantity\n");
+		printf("\n(1)name\n(2)price\n(3)color\n(4)type\n(5)Quantity\n");
 		scanf("%d",&k);
 	}
 	while (k<1 || k>8);
 
 		//fTemp = fopen("replace.tmp", "w"); 
-		switch(k){
+		switch(k){	
 			case 1:
-				printf("Give the new product id : ");
-				scanf("%d",&pidn);
-				while (fscanf(F.fselect,"%d %s %f %s %hd %c %d %f",&pid,&nm,&pr,&col,&typ,&inv,&qt,&inval)==8){
-					pid=pidn;
-					fprintf(F.fconserve,"%d",pid);
-					fprintf(F.fconserve," %s",nm);
-					fprintf(F.fconserve," %.3f",pr);
-					fprintf(F.fconserve," %s",col);
-					fprintf(F.fconserve," %hd",typ);
-					fprintf(F.fconserve," %c",inv);
-					fprintf(F.fconserve," %d",qt);
-					fprintf(F.fconserve," %.3f\n",inval);
-										}
-				break;
-				
-			case 2:
 				printf("Give the new product name : ");
 				scanf("%s",&nmN);
 				topper(nmN);
@@ -802,7 +786,7 @@ u:
 				break;
 				
 				
-			case 3:
+			case 2:
 				do{
 				printf("Give the new price of these products : ");
 				scanf("%f",&prN);
@@ -829,7 +813,7 @@ u:
 				
 				break;
 				
-			case 4:
+			case 3:
 				do{
 				printf("Give the new product color[BLUE,BLACK,RED]: ");
 				scanf("%s",&colS);
@@ -850,7 +834,7 @@ u:
 			}
 				break;
 				
-			case 5:
+			case 4:
 				
 				
 				do{
@@ -871,7 +855,7 @@ u:
 					fprintf(F.fconserve," %.3f\n",inval);
 			}
 				break;
-			case 6:
+			case 5:
 				
 				
 				
