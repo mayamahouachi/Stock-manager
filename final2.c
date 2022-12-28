@@ -1069,10 +1069,10 @@ int main()
     printf("|\t\t\t\t\t\t\t\t\t\t\t\t\t|\n");
     printf("|\t\t\t\t\t\t\t\t\t\t\t\t\t|\n");
     printf("|\t\t\t\t\t\t\t\t\t\t\t\t\t|\n");
-    printf("|\t\t\t\t**\t\t\t\t\t\t\t\t\t|\n");
+    printf("|\t\t\t\t  \t\t\t\t\t\t\t\t\t|\n");
     printf("|\t\t\t\t|\t   WELCOME TO   \t |\t\t\t\t\t|\n");
-    printf("|\t\t\t\t|\t   MANAGEMENT  \t\t |\t\t\t\t\t|\n");
-    printf("|\t\t\t\t**\t\t\t\t\t\t\t\t\t|\n");
+    printf("|\t\t\t\t|\t STOCK  MANAGEMENT  \t |\t\t\t\t\t|\n");
+    printf("|\t\t\t\t  \t\t\t\t\t\t\t\t\t|\n");
     printf("|\t\t\t\t\t\t\t\t\t\t\t\t\t|\n");
     printf("|\t\t\t\t\t\t\t\t\t\t\t\t\t|\n");
     printf("|\t\t\t\t\t\t\t\t\t\t\t\t\t|\n");
