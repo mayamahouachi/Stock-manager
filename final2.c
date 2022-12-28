@@ -786,7 +786,16 @@ void update(){
 	char p;
 	struct files F;
     FILE *f;
-    
+    		long size;
+	f=fopen("TEST!.txt","r+");
+	fseek (f, 0, SEEK_END);
+	size = ftell(f);
+	if(size==0){
+		printf("NO RECORD ADDED.");
+		getch();
+		menu();
+	}
+	fclose(f);
 u:
 		f = fopen(path,"r+");
 		do{
@@ -967,6 +976,16 @@ u:
 void read_Product_ALL(){
 		FILE *f;
 	int i, q;
+	long size;
+	f=fopen("TEST!.txt","r+");
+	fseek (f, 0, SEEK_END);
+	size = ftell(f);
+	if(size==0){
+		printf("NO RECORD ADDED.");
+		getch();
+		menu();
+	}
+	fclose(f);
 	if((f=fopen("TEST!.txt","r"))==NULL)
 	{
 	
@@ -1036,13 +1055,24 @@ void read_Product_ALL(){
 void delete_All(){
 	char c;
 	FILE *f;
+	long size;
+	f=fopen("TEST!.txt","r+");
+	fseek (f, 0, SEEK_END);
+	size = ftell(f);
+	if(size==0){
+		printf("NO RECORD ADDED.");
+		getch();
+		menu();
+	}
+	fclose(f);
 	if((f=fopen("TEST!.txt","r+"))==NULL)
 	{
 		printf("NO RECORD ADDED.");
 		getch();
 		menu();
 	}
-	printf("Do you really want to delete all the products?\nif yes press(y) \nif no press any other key and return to the main menu");
+	fclose(f);
+	printf("Do you really want to delete all the products?\nif yes PRESS(y) \nif no PRESS any other key and return to the main menu");
 	c=getch();
 	if (toupper(c)=='Y'){
 		remove("TEST!.txt");
