@@ -646,6 +646,13 @@ void delete_items(){
 	FILE *f;
 	char c;
 	long size;
+	if((f=fopen("TEST!.txt","r+"))==NULL)
+	{
+		printf("NO RECORD ADDED.");
+		getch();
+		menu();
+	}
+	fclose(f);
 d:
 	f=fopen("TEST!.txt","r+");
 	fseek (f, 0, SEEK_END);
@@ -804,10 +811,18 @@ void update(){
 	struct files F;
     FILE *f;
     		long size;
+	
 	f=fopen("TEST!.txt","r+");
 	fseek (f, 0, SEEK_END);
 	size = ftell(f);
 	if(size==0){
+		printf("NO RECORD ADDED.");
+		getch();
+		menu();
+	}
+	fclose(f);
+	if((f=fopen("TEST!.txt","r+"))==NULL)
+	{
 		printf("NO RECORD ADDED.");
 		getch();
 		menu();
