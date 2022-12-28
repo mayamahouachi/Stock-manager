@@ -609,6 +609,21 @@ d:
 			fclose(F.fselect);
 		fclose(F.fconserve);
 		fclose(f);
+	
+	system("cls");
+		do {
+				printf("DO you want to see the products that are going to DELETE?\n (1)yes , (0)no");
+				scanf("%d",&k);
+		}
+		while (k!=0 && k!=1);
+		if (i==1){
+		F.fselect=fopen("inter1.txt","r");
+		show(F.fselect);
+		fclose(F.fselect);
+		F.fselect=fopen("inter1.txt","r+");
+		}
+	
+	
 		int rem;
 		rem=remove("TEST!.txt");
 		remove("inter1.txt");
