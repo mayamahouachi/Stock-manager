@@ -607,6 +607,7 @@ void delete_items(){
 		menu();
 	}
 d:
+	fclose(f);
 	f = fopen("TEST!.txt","r+");
 		
 			printf("Press any key to select products to delete ");
