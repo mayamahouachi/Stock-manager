@@ -600,6 +600,12 @@ void delete_items(){
 	struct files F;
 	FILE *f;
 	char c;
+	if((f=fopen("TEST!.txt","r+"))==NULL)
+	{
+		printf("NO RECORD ADDED.");
+		getch();
+		menu();
+	}
 d:
 	f = fopen("TEST!.txt","r+");
 		
@@ -978,6 +984,13 @@ void read_Product_ALL(){
 }
 void delete_All(){
 	char c;
+	FILE *f;
+	if((f=fopen("TEST!.txt","r+"))==NULL)
+	{
+		printf("NO RECORD ADDED.");
+		getch();
+		menu();
+	}
 	printf("Do you really want to delete all the products?\nif yes press(y) \nif no press any other key and return to the main menu");
 	c=getch();
 	if (toupper(c)=='Y'){
