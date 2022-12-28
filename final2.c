@@ -703,6 +703,23 @@ void read_products(){
 		FILE *f;
 		struct files F;
 		////////////////////////
+			long size;
+	f=fopen("TEST!.txt","r+");
+	fseek (f, 0, SEEK_END);
+	size = ftell(f);
+	if(size==0){
+		printf("NO RECORD ADDED.");
+		getch();
+		menu();
+	}
+	fclose(f);
+	if((f=fopen("TEST!.txt","r+"))==NULL)
+	{
+		printf("NO RECORD ADDED.");
+		getch();
+		menu();
+	}
+	fclose(f);
 		////////////////////
 
 
