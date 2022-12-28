@@ -160,7 +160,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 	char a[]="A",b[]="B",c[]="C";
 	check:
 	printf("which serie of products do you wish to use ?");
-	printf("Group by :\n(1)name\n(2)price\n(3)color\n(4)type\n(5)Quantity\n(6)inventoryVAL\n");
+	printf("Group by :\n(1)ProductID[UNIQUE]\n(2)name\n(3)price\n(4)color\n(5)type\n(6)Quantity\n(7)inventoryVAL\n");
 	
 	printf("Press the number corresponding to your selection ?");
 	scanf("%d",&i);
@@ -170,8 +170,53 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
     fclose(F.fconserve);
 	ok=0;
 	switch(i){
-	
 		case 1:
+			
+			label:
+			
+			printf("Give the product id[UNIQUE]:");
+			scanf("%d",&p);
+			while (fscanf(f,"%d %s %f %s %hd %c %d %f",&pid,&nm,&pr,&col,&typ,&inv,&qt,&inval)==8){
+				
+				if (pid==p ){
+					ok++;}
+					
+					
+								if ((pid==p )&&(ok==1)){
+								//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
+								F.fselect=fopen("inter1.txt","w");//w
+								fprintf(F.fselect,"%d",pid);
+								fprintf(F.fselect," %s",nm);
+								fprintf(F.fselect," %.3f",pr);
+								fprintf(F.fselect," %s",col);
+								fprintf(F.fselect," %hd",typ);
+								fprintf(F.fselect," %c",inv);
+								fprintf(F.fselect," %d",qt);
+								fprintf(F.fselect," %.3f\n",inval);
+								fclose(F.fselect);
+						}
+						else{
+								F.fconserve=fopen("inter2.txt","a+");
+								fprintf(F.fconserve,"%d",pid);
+								fprintf(F.fconserve," %s",nm);
+								fprintf(F.fconserve," %.3f",pr);
+								fprintf(F.fconserve," %s",col);
+								fprintf(F.fconserve," %hd",typ);
+								fprintf(F.fconserve," %c",inv);
+								fprintf(F.fconserve," %d",qt);
+								fprintf(F.fconserve," %.3f\n",inval);
+								fclose(F.fconserve);
+													}
+						
+				
+
+			}
+			if (ok==0){
+				printf("WRONG! non existant product id!!");
+				goto label;
+			}
+			break;
+		case 2:
 			label1:
 			
 			printf("Give the product name:  ");
@@ -229,7 +274,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 				goto label1;
 			}
 			break;
-		case 2:
+		case 3:
 			label2:
 			
 			printf("Give Maximum price of the product : ");
@@ -289,7 +334,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 				goto label2;
 			}
 			break;
-		case 3:
+		case 4:
 			label3:
 			do{
 			printf("Give the product color[BLUE,BLACK,RED]: ");
@@ -352,7 +397,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 				goto label3;
 			}
 			break;
-		case 4:
+		case 5:
 			label4:
 			do{
 			
@@ -413,7 +458,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 			}
 			break;
 		
-		case 5:
+		case 6:
 			label6:
 			do{
 
@@ -472,7 +517,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 				goto label6;
 			}
 			break;
-		case 6:
+		case 7:
 			label7:
 			printf("give maximum inventory value :");
 			scanf("%f",&invalMX);
@@ -600,13 +645,18 @@ void delete_items(){
 	struct files F;
 	FILE *f;
 	char c;
-	if((f=fopen("TEST!.txt","r+"))==NULL)
+	long size;
+d:
+	f=fopen("TEST!.txt","r+");
+	fseek (f, 0, SEEK_END);
+	size = ftell(f);
+	if(size==0)
 	{
 		printf("NO RECORD ADDED.");
 		getch();
 		menu();
 	}
-d:
+//d:
 	fclose(f);
 	f = fopen("TEST!.txt","r+");
 		
@@ -627,7 +677,7 @@ d:
 		F.fselect=fopen("inter1.txt","r");
 		show(F.fselect);
 		fclose(F.fselect);
-		F.fselect=fopen("inter1.txt","r+");
+		//F.fselect=fopen("inter1.txt","r+");
 		}
 	
 	
@@ -658,7 +708,7 @@ void read_products(){
 
 		f = fopen("TEST!.txt","r");
 		
-			printf("PRESS any key to select products to delete ");
+			printf("PRESS any key to select products that you want to READ : ");
 			getch();
 			F=Select(f);
 			fclose(F.fselect);
