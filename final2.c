@@ -718,7 +718,7 @@ void update(){
 u:
 		f = fopen(path,"r+");
 		do{
-			printf("type (0) use products selection, type (1)to use all the products!");
+			printf("PRESS (0) to use products selection, PRESS (1) to use all the products!");
 			scanf("%d",&i);
 		}
 		while ((i!=0)&&(i!=1));
@@ -899,17 +899,7 @@ u:
 			int ret;
 		ret=rename("inter2.txt",path);
 
-	/*if(ret == 0) 
-	{
-		printf("File renamed successfully");
-	}
-	else 
-	{
-		printf("Error: unable to rename the file");
-		fprintf(stderr, "System error (%d): %s\n", errno, strerror(errno));
-	}*/
-		
-//}
+	
 	printf("If you want to Update another set of products press(y) Or press any other keys to return to the Main Menu");
         p=getch();
         system("cls");
