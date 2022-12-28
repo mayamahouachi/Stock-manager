@@ -596,7 +596,7 @@ void show(FILE *f){
 
 //////////////////////
 void delete_items(){
-	int i;
+	int i,k;
 	struct files F;
 	FILE *f;
 	char c;
@@ -616,7 +616,7 @@ d:
 				scanf("%d",&k);
 		}
 		while (k!=0 && k!=1);
-		if (i==1){
+		if (k==1){
 		F.fselect=fopen("inter1.txt","r");
 		show(F.fselect);
 		fclose(F.fselect);
