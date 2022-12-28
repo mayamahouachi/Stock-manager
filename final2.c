@@ -1015,7 +1015,7 @@ void menu(void)
 	printf("                                                                                          ");
 	printf("                                                                                          ");
 	printf("\n\t\tPress <1> Add Products");
-	printf("\n\t\tPress <2> delete Products");
+	printf("\n\t\tPress <2> Delete Products");
 	printf("\n\t\tPress <3> Update Products");
 	printf("\n\t\tPress <4> Read Products");
 	printf("\n\t\tPress <5> Read ALL Products");
