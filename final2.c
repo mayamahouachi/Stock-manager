@@ -629,7 +629,7 @@ d:
 		remove("inter1.txt");
 		int ret;
 		ret=rename("inter2.txt","TEST!.txt");
-	 printf("If you want to delete another product press(y) Or press any other keys to return to the Main Menu");
+	 printf("\nIf you want to delete another product press(y) Or press any other keys to return to the Main Menu");
         c=getch();
         system("cls");
         if(toupper(c)=='Y'){
