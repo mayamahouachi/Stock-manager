@@ -853,11 +853,10 @@ u:
 		}
 		}
 		else {
-			F.fselect=f;
+			fclose(f);
+			F.fselect=fopen(path,"r+");
 			F.fconserve=fopen("inter2.txt","w");
 		}
-		//show(F.fselect);
-		F.fselect=fopen("inter1.txt","r+");
 		printf("\nWHAT do you want to update ? ");
 		do{
 		printf("\n(1)name\n(2)price\n(3)color\n(4)type\n(5)Quantity\n");
