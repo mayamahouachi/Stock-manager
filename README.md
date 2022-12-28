@@ -30,7 +30,7 @@
 
 <img width="937" alt="1" src="https://user-images.githubusercontent.com/120915561/209748412-7293504f-5f1a-4dca-9d4d-85ceccc9af48.png">
 
-** <p> main menu : </p>**
+**<p> main menu : </p>**
 
 <img width="934" alt="2" src="https://user-images.githubusercontent.com/120915561/209748432-0829d735-03a5-401d-aade-c033aa27e19a.png">
  
