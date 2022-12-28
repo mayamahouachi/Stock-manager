@@ -169,11 +169,12 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 	F.fconserve=fopen("inter2.txt","w");
     fclose(F.fconserve);
 	ok=0;
+	fclose(f);
 	switch(i){
 		case 1:
 			
 			label:
-			
+			f=fopen("TEST!.txt","r+");
 			printf("Give the product id[UNIQUE]:");
 			scanf("%d",&p);
 			while (fscanf(f,"%d %s %f %s %hd %c %d %f",&pid,&nm,&pr,&col,&typ,&inv,&qt,&inval)==8){
@@ -213,12 +214,13 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 			}
 			if (ok==0){
 				printf("WRONG! non existant product id!!");
+				fclose(f);
 				goto label;
 			}
 			break;
 		case 2:
 			label1:
-			
+			f=fopen("TEST!.txt","r+");
 			printf("Give the product name:  ");
 			scanf("%s",&nmS);
 			topper(nmS);
@@ -271,12 +273,13 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 			}
 			if (ok==0){
 				printf("WRONG non existant product name!!");
+				fclose(f);
 				goto label1;
 			}
 			break;
 		case 3:
 			label2:
-			
+			f=fopen("TEST!.txt","r+");
 			printf("Give Minimum price of the product : ");
 			scanf("%f",&prMN);
 			printf("Give Maximum price of the product : ");
@@ -332,11 +335,13 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 			}
 			if (ok==0){
 				printf("Inavailable products,TRY another scale!!");
+				fclose(f);
 				goto label2;
 			}
 			break;
 		case 4:
 			label3:
+			f=fopen("TEST!.txt","r+");
 			do{
 			printf("Give the product color[BLUE,BLACK,RED]: ");
 			scanf("%s",&colS);
@@ -395,11 +400,13 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 			}
 			if (ok==0){
 				printf("Wrong non existant product in such color !!");
+				fclose(f);
 				goto label3;
 			}
 			break;
 		case 5:
 			label4:
+			f=fopen("TEST!.txt","r+");
 			do{
 			
 			printf("Give the product type[1,2,3]:");
@@ -455,12 +462,14 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 			}
 			if (ok==0){
 				printf("No existant product in type!!");
+				fclose(f);
 				goto label4;
 			}
 			break;
 		
 		case 6:
 			label6:
+			f=fopen("TEST!.txt","r+");
 			do{
 
 			printf("Give Minimum quantity of products : ");
@@ -515,11 +524,13 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 			}
 			if (ok==0){
 				printf("Not enough product for the required quantity ");
+				fclose(f);
 				goto label6;
 			}
 			break;
 		case 7:
 			label7:
+			f=fopen("TEST!.txt","r+");
 			printf("give minimum inventory value :");
 			scanf("%f",&invalMN);
 			printf("give maximum inventory value :");
@@ -575,6 +586,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 			}
 			if (ok==0){
 				printf("Wrong non existant product id!!");
+				fclose(f);
 				goto label7;
 			}
 			break;
