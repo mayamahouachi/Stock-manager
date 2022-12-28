@@ -277,10 +277,11 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 		case 3:
 			label2:
 			
-			printf("Give Maximum price of the product : ");
-			scanf("%f",&prMX);
 			printf("Give Minimum price of the product : ");
 			scanf("%f",&prMN);
+			printf("Give Maximum price of the product : ");
+			scanf("%f",&prMX);
+			
 			while (fscanf(f,"%d %s %f %s %hd %c %d %f",&pid,&nm,&pr,&col,&typ,&inv,&qt,&inval)==8){
 			if ((pr>=prMN )&&(pr<=prMX)){
 					ok++;}
@@ -462,7 +463,7 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 			label6:
 			do{
 
-			printf("Give minimum quantity : ");
+			printf("Give Minimum quantity of products : ");
 			scanf("%d",&qtS);}
 			while(qtS<0);
 		
@@ -519,10 +520,11 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 			break;
 		case 7:
 			label7:
-			printf("give maximum inventory value :");
-			scanf("%f",&invalMX);
 			printf("give minimum inventory value :");
 			scanf("%f",&invalMN);
+			printf("give maximum inventory value :");
+			scanf("%f",&invalMX);
+			
 			while (fscanf(f,"%d %s %f %s %hd %c %d %f",&pid,&nm,&pr,&col,&typ,&inv,&qt,&inval)==8){
 				
 			if ((inval>=invalMN)&&(inval<=invalMX)){
