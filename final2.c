@@ -609,7 +609,7 @@ void delete_items(){
 d:
 	f = fopen("TEST!.txt","r+");
 		
-			printf("Press any key to selet products to delete ");
+			printf("Press any key to select products to delete ");
 			getch();
 			F=Select(f);
 			fclose(F.fselect);
