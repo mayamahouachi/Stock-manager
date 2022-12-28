@@ -610,7 +610,7 @@ void show(FILE *f){
         gotoxy(48,6);
         printf("Type");
         gotoxy(60,6);
-        printf("Inventorty");
+        printf("Inventory");
         gotoxy(74,6);
         printf("Quantity");
         gotoxy(87,6);
