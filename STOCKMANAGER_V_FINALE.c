@@ -114,7 +114,7 @@ I:
         	printf("Wrong!! Please enter [1,2,3]: ");
         	scanf("%hd",&p.discp.type);
 		}
-        printf("Inventary[A,B,C]: ");
+        printf("Inventory[A,B,C]: ");
         scanf("%s",&p.inventory);
         p.inventory=toupper(p.inventory);
         while((p.inventory!='A')&&(p.inventory!='B')&&(p.inventory!='C')){
@@ -721,7 +721,7 @@ void show(FILE *f){
         gotoxy(48,6);
         printf("Type");
         gotoxy(60,6);
-        printf("Inventorty");
+        printf("Inventory");
         gotoxy(74,6);
         printf("Quantity");
         gotoxy(87,6);
