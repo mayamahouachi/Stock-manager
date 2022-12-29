@@ -150,7 +150,7 @@ w=getch();
    menu();
 }
 struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on voulait selectionnes et un autre rempli des donnees a ne pas toucher
-	int i,o;
+	int i,o,j,test;
     char w;
 	struct files FL,F;
 	char nm[20],col[20],inv,nmS[20],colS[20],invS,black[]="BLACK",blue[]="BLUE",red[]="RED";
@@ -233,11 +233,29 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 		case 2:
 			label1:
 			F.fconserve=fopen("conserve.txt","w");
-    fclose(F.fconserve);
+                        fclose(F.fconserve);
 			f=fopen("TEST!.txt","r+");
-			printf("Give the product name selection:  ");
-			scanf("%s",&nmS);
-			topper(nmS);
+		        do
+		        {  	printf("Give the product name selection:  ");
+			        scanf("%s",&nmS);
+			        topper(nmS);
+			        for (j=0; j<strlen(nmS); j++)
+			        {	
+				     if(isalpha(nmS[j])){
+					 test = 1;
+				     }
+				     else
+				     {
+					test = 0;
+					break;
+				     }
+			        }
+			        if (test==0)
+			        {
+				        printf(" Please 'Enter' an alphabetic string \n");
+				        getch();		
+			        }
+		        }while(test==0);
 			while (fscanf(f,"%d %s %f %s %hd %c %d %f\n",&pid,&nm,&pr,&col,&typ,&inv,&qt,&inval)==8){
 				if (strcmp(nm,nmS) == 0 ){
 					ok++;}
@@ -902,7 +920,7 @@ void update(){
 	float pr,prN,inval,invalN;
 	int pid,pidn,qt,k,qtS,c=0;
 	short typ,typS;
-	int i;
+	int i,j,test;
 	char p;
 	struct files F;
     FILE *f;
@@ -961,9 +979,27 @@ rep:		printf("\nWHAT column do you wish to update ? ");
 
 	switch(k){	
 			case 1:
-				printf("Give the NEW product name : ");
-				scanf("%s",&nmN);
-				topper(nmN);
+		         do
+		         {  	printf("Give the product name selection:  ");
+			        scanf("%s",&nmN);
+			        topper(nmN);
+			        for (j=0; j<strlen(nmN); j++)
+			        {	
+				      if(isalpha(nmN[j])){
+					 test = 1;
+				      }
+				      else
+				      {
+					 test = 0;
+					 break;
+				      }
+			        }
+			        if (test==0)
+			        {
+				        printf(" Please 'Enter' an alphabetic string \n");
+				        getch();		
+			        }
+		             }while(test==0);
 				while (fscanf(F.fselect,"%d %s %f %s %hd %c %d %f",&pid,&nm,&pr,&col,&typ,&inv,&qt,&inval)==8){
 					
 					strcpy(nm,nmN);
