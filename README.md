@@ -24,7 +24,7 @@
 - C++ dev
 
 
-## collaborators:
+## contributors:
 - TLILI Yacine
 - GHAOUI Youssef
 - MAHOUACHI Maya
