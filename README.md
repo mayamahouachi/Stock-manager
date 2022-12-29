@@ -54,7 +54,7 @@
  ### Delete products  : 
 
 <img width="857"  alt="8" src="https://user-images.githubusercontent.com/120915561/209749059-ac52246c-226c-4fa3-be74-5d50d9dd7761.png">
-<img width="960" alt="9" src="https://user-images.githubusercontent.com/120915561/209973114-f3fa8658-518d-4f90-85da-9d2dd1fd6668.png">
+<img width="922" alt="9" src="https://user-images.githubusercontent.com/120915561/209973456-31ebdf08-508e-4e33-83cf-ba185bfe4244.png">
 
 **<p> Products deleted successfully </p>**
 
@@ -87,6 +87,7 @@
  **<p> We can also update products selected by ID, Name, Color, Price, Type, quantity and inventory value </p>**
  
  ### Update all products :
+ 
  
  
 
