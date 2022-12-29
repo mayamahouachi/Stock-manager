@@ -65,6 +65,10 @@
 
 <img width="1000" alt="init4" src="https://user-images.githubusercontent.com/120915561/209980306-13788f7e-87d1-4e71-b790-e59b465eb1f9.png">
 
+**<p> This is an exemple of delete by selection using price </p>**
+
+**<p> We can also delete products selected by ID, Name, Color, Type, quantity and inventory value </p>**
+
  ### Delete all products :
  <img width="1000" alt="Capture d'écran_20221229_152634" src="https://user-images.githubusercontent.com/120915561/209967262-b0e4babf-e0db-45d9-b11d-15670c4349b1.png">
  
