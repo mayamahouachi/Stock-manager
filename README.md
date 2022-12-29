@@ -35,33 +35,38 @@
  
 **<p> welcome page : </p>**
 
-<img width="937" alt="1" src="https://user-images.githubusercontent.com/120915561/209748412-7293504f-5f1a-4dca-9d4d-85ceccc9af48.png">
+<img width="1000" alt="1" src="https://user-images.githubusercontent.com/120915561/209748412-7293504f-5f1a-4dca-9d4d-85ceccc9af48.png">
 
 **<p> main menu : </p>**
 
-<img width="934" alt="2" src="https://user-images.githubusercontent.com/120915561/209748432-0829d735-03a5-401d-aade-c033aa27e19a.png">
+<img width="1000" alt="2" src="https://user-images.githubusercontent.com/120915561/209748432-0829d735-03a5-401d-aade-c033aa27e19a.png">
  
  ### add new products : 
-<img width="932" alt="3" src="https://user-images.githubusercontent.com/120915561/209748603-f482d8d2-0651-438a-a48a-6552956a242c.png">
+<img width="1000" alt="3" src="https://user-images.githubusercontent.com/120915561/209748603-f482d8d2-0651-438a-a48a-6552956a242c.png">
 
-<img width="931" alt="4" src="https://user-images.githubusercontent.com/120915561/209748668-9aba6829-f729-42b5-b9f0-ab3ed658df37.png">
-<img width="922" alt="5" src="https://user-images.githubusercontent.com/120915561/209748694-304c4085-80a7-4771-aef2-d7ab707dd416.png">
+<img width="1000" alt="4" src="https://user-images.githubusercontent.com/120915561/209748668-9aba6829-f729-42b5-b9f0-ab3ed658df37.png">
+<img width="1000" alt="5" src="https://user-images.githubusercontent.com/120915561/209748694-304c4085-80a7-4771-aef2-d7ab707dd416.png">
 
  ### show database : 
- <img width="919" alt="6" src="https://user-images.githubusercontent.com/120915561/209748765-0ad52244-61b1-4194-9bf8-cfef81d5b426.png">
-<img width="932" alt="7" src="https://user-images.githubusercontent.com/120915561/209748770-45b7c501-ce29-4b81-89dc-913de6ad964b.png">
+ <img width="1000" alt="6" src="https://user-images.githubusercontent.com/120915561/209748765-0ad52244-61b1-4194-9bf8-cfef81d5b426.png">
+<img width="1000" alt="7" src="https://user-images.githubusercontent.com/120915561/209748770-45b7c501-ce29-4b81-89dc-913de6ad964b.png">
 
- ### Delete products  : 
+ ### Delete products by selection  : 
+ **<p> Here an exemple of database </p>**
+<img width="1000" alt="init" src="https://user-images.githubusercontent.com/120915561/209980309-f7b63ecb-9ff5-46db-baa2-c0559d1382bd.png">
 
-<img width="857"  alt="8" src="https://user-images.githubusercontent.com/120915561/209749059-ac52246c-226c-4fa3-be74-5d50d9dd7761.png">
-<img width="922" alt="9" src="https://user-images.githubusercontent.com/120915561/209973456-31ebdf08-508e-4e33-83cf-ba185bfe4244.png">
+<img width="1000" alt="init2" src="https://user-images.githubusercontent.com/120915561/209980311-ec7f7d25-6e32-41ba-9886-788835b11009.png">
+
+<img width="1000" alt="init3 (1)" src="https://user-images.githubusercontent.com/120915561/209980314-57bf66c2-fe7b-4003-ba53-40e0f7e8365c.png">
+
+<img width="1000" alt="init3 (3)" src="https://user-images.githubusercontent.com/120915561/209980304-cfef4365-53cd-4f10-a78f-815747b8bd17.png">
 
 **<p> Products deleted successfully </p>**
 
-<img width="930" alt="11" src="https://user-images.githubusercontent.com/120915561/209749086-04ece3ca-f720-4bda-b7fb-34656fd2e91f.png">
+<img width="1000" alt="init4" src="https://user-images.githubusercontent.com/120915561/209980306-13788f7e-87d1-4e71-b790-e59b465eb1f9.png">
 
  ### Delete all products :
- <img width="884" alt="Capture d'écran_20221229_152634" src="https://user-images.githubusercontent.com/120915561/209967262-b0e4babf-e0db-45d9-b11d-15670c4349b1.png">
+ <img width="1000" alt="Capture d'écran_20221229_152634" src="https://user-images.githubusercontent.com/120915561/209967262-b0e4babf-e0db-45d9-b11d-15670c4349b1.png">
  
 ![1](https://user-images.githubusercontent.com/120915561/209966419-0c4b0773-2f62-48d9-835f-14a011c3e88b.jpg)
 
@@ -89,15 +94,20 @@
  ### Update all products :
  
  
- <img width="837" alt="A (1)" src="https://user-images.githubusercontent.com/120915561/209976507-ba8cd41e-0fa3-4a52-be33-a31d5a40e6b4.png">
-<img width="805" alt="A (2)" src="https://user-images.githubusercontent.com/120915561/209976511-59d2726a-374e-4f69-a16f-4dc4b5f87722.png">
-<img width="825" alt="A (3)" src="https://user-images.githubusercontent.com/120915561/209976513-2a163636-a484-430c-85fc-8ffc4d6541af.png">
+ <img width="1000" alt="A (1)" src="https://user-images.githubusercontent.com/120915561/209976507-ba8cd41e-0fa3-4a52-be33-a31d5a40e6b4.png">
+<img width="1000" alt="A (2)" src="https://user-images.githubusercontent.com/120915561/209976511-59d2726a-374e-4f69-a16f-4dc4b5f87722.png">
+<img width="1000" alt="A (3)" src="https://user-images.githubusercontent.com/120915561/209976513-2a163636-a484-430c-85fc-8ffc4d6541af.png">
 
  **<p> Changes are applied to all products </p>**
 **<p> We can also change all products' Name, Price, Type & quantity  </p>** 
 
  ### EXIT :
-**<p> Exit if you enter a number other than {1,2,3,4,5}  <p/>** 
+  
+**<p> Exit if you type a key other than {1,2,3,4,5,6}  <p/>** 
+ 
+<img width="1000" alt="Capture d'écran_20221229_165222" src="https://user-images.githubusercontent.com/120915561/209978313-e855b847-b9e4-49d5-aee3-ede16434c1b3.png">
+<img width="1000" alt="Capture d'écran_20221229_165230" src="https://user-images.githubusercontent.com/120915561/209978317-0216c7bd-b569-4cf4-8ae4-ad59989efe4e.png">
+
 <p/>
 
 
