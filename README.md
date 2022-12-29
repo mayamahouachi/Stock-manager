@@ -84,8 +84,8 @@
 
 ![321299773_840334740404153_8526625473827025728_n](https://user-images.githubusercontent.com/120915561/209968525-aa643901-69f3-4cbc-80f8-1064a1ff2273.jpg)
  **<p> This is an exemple of update by selection using name </p>**
- **<p> We can also update products selected by ID, Name, Color, Price, Type, quantity and inventory value </p>**
- 
+**<p> We can also update products selected by ID, Name, Color, Price, Type, quantity and inventory value </p>** 
+
  ### Update all products :
  
  
