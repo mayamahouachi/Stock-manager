@@ -51,6 +51,14 @@
  <img width="1000" alt="6" src="https://user-images.githubusercontent.com/120915561/209748765-0ad52244-61b1-4194-9bf8-cfef81d5b426.png">
 <img width="1000" alt="7" src="https://user-images.githubusercontent.com/120915561/209748770-45b7c501-ce29-4b81-89dc-913de6ad964b.png">
 
+### show  products by selection : 
+ **<p> This is an exemple of show by selection using productId </p>**
+
+
+<img width="844" alt="Capture d'écran_20221229_180326" src="https://user-images.githubusercontent.com/120915561/209986291-d5b6447f-64aa-4d72-829d-6d7cf598a861.png">
+<img width="827" alt="Capture d'écran_20221229_180409" src="https://user-images.githubusercontent.com/120915561/209986193-958394ba-0a85-43e8-89d3-bcffb1a5d721.png">
+<img width="834" alt="Capture d'écran_20221229_180417" src="https://user-images.githubusercontent.com/120915561/209986200-4eece0a2-80a6-42a4-93ac-78630494d59c.png">
+
  ### Delete products by selection  : 
  **<p> Here an exemple of database </p>**
 <img width="1000" alt="init" src="https://user-images.githubusercontent.com/120915561/209980309-f7b63ecb-9ff5-46db-baa2-c0559d1382bd.png">
