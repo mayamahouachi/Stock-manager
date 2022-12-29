@@ -89,14 +89,16 @@
  ### Update all products :
  
  
- <img width="737" alt="A (1)" src="https://user-images.githubusercontent.com/120915561/209976507-ba8cd41e-0fa3-4a52-be33-a31d5a40e6b4.png">
+ <img width="837" alt="A (1)" src="https://user-images.githubusercontent.com/120915561/209976507-ba8cd41e-0fa3-4a52-be33-a31d5a40e6b4.png">
 <img width="805" alt="A (2)" src="https://user-images.githubusercontent.com/120915561/209976511-59d2726a-374e-4f69-a16f-4dc4b5f87722.png">
 <img width="825" alt="A (3)" src="https://user-images.githubusercontent.com/120915561/209976513-2a163636-a484-430c-85fc-8ffc4d6541af.png">
 
  **<p> Changes are applied to all products </p>**
 **<p> We can also change all products' Name, Price, Type & quantity  </p>** 
 
- <p/>
+ ### EXIT :
+**<p> Exit if you enter a number other than {1,2,3,4,5}  <p/>** 
+<p/>
 
 
 
