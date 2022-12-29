@@ -8,11 +8,11 @@
 
 ## features:
 - **Add** products to database.
-- **Update** database grouped by your requirements.
-- **Show** database grouped by your requirements
+- **Update** items by selection.
+- **Show** items by selection.
 - **Show** database.
 - **Delete** all items. 
-- **Delete** an item.
+- **Delete** items by selection.
 
 
 ## Deployment:
