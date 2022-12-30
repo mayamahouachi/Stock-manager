@@ -230,9 +230,13 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 								fprintf(F.fconserve," %c",inv);
 								fprintf(F.fconserve," %d",qt);
 								fprintf(F.fconserve," %.3f",inval);
-								time_t  D;
-								time(&D);
-								fprintf(F.fconserve," %s\n",ctime(&D));
+								fprintf(F.fconserve," %s",T.day);
+								fprintf(F.fconserve," %s",T.month);
+								fprintf(F.fconserve," %d",T.dym);
+								fprintf(F.fconserve," %d",T.time.h);
+								fprintf(F.fconserve,":%d",T.time.m);
+								fprintf(F.fconserve,":%d",T.time.s);
+								fprintf(F.fconserve," %d\n",T.year);
 								fclose(F.fconserve);
 													}
 						
@@ -329,9 +333,13 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					fprintf(F.fconserve," %c",inv);
 					fprintf(F.fconserve," %d",qt);
 					fprintf(F.fconserve," %.3f",inval);
-					time_t  D;
-					time(&D);
-					fprintf(F.fconserve," %s\n",ctime(&D));
+					fprintf(F.fconserve," %s",T.day);
+					fprintf(F.fconserve," %s",T.month);
+					fprintf(F.fconserve," %d",T.dym);
+					fprintf(F.fconserve," %d",T.time.h);
+					fprintf(F.fconserve,":%d",T.time.m);
+					fprintf(F.fconserve,":%d",T.time.s);
+					fprintf(F.fconserve," %d\n",T.year);
 					fclose(F.fconserve);
 				}
 			}
@@ -412,9 +420,13 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					fprintf(F.fconserve," %c",inv);
 					fprintf(F.fconserve," %d",qt);
 					fprintf(F.fconserve," %.3f",inval);
-					time_t  D;
-					time(&D);
-					fprintf(F.fconserve," %s\n",ctime(&D));
+					fprintf(F.fconserve," %s",T.day);
+					fprintf(F.fconserve," %s",T.month);
+					fprintf(F.fconserve," %d",T.dym);
+					fprintf(F.fconserve," %d",T.time.h);
+					fprintf(F.fconserve,":%d",T.time.m);
+					fprintf(F.fconserve,":%d",T.time.s);
+					fprintf(F.fconserve," %d\n",T.year);
 					fclose(F.fconserve);
 				}
 			}
@@ -497,9 +509,13 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					fprintf(F.fconserve," %c",inv);
 					fprintf(F.fconserve," %d",qt);
 					fprintf(F.fconserve," %.3f",inval);
-					time_t  D;
-					time(&D);
-					fprintf(F.fconserve," %s\n",ctime(&D));
+					fprintf(F.fconserve," %s",T.day);
+					fprintf(F.fconserve," %s",T.month);
+					fprintf(F.fconserve," %d",T.dym);
+					fprintf(F.fconserve," %d",T.time.h);
+					fprintf(F.fconserve,":%d",T.time.m);
+					fprintf(F.fconserve,":%d",T.time.s);
+					fprintf(F.fconserve," %d\n",T.year);
 					fclose(F.fconserve);
 				}
 			}
@@ -579,9 +595,13 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					fprintf(F.fconserve," %c",inv);
 					fprintf(F.fconserve," %d",qt);
 					fprintf(F.fconserve," %.3f",inval);
-					time_t  D;
-					time(&D);
-					fprintf(F.fconserve," %s\n",ctime(&D));
+					fprintf(F.fconserve," %s",T.day);
+					fprintf(F.fconserve," %s",T.month);
+					fprintf(F.fconserve," %d",T.dym);
+					fprintf(F.fconserve," %d",T.time.h);
+					fprintf(F.fconserve,":%d",T.time.m);
+					fprintf(F.fconserve,":%d",T.time.s);
+					fprintf(F.fconserve," %d\n",T.year);
 					fclose(F.fconserve);
 				}
 			}
@@ -661,9 +681,13 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					fprintf(F.fconserve," %c",inv);
 					fprintf(F.fconserve," %d",qt);
 					fprintf(F.fconserve," %.3f",inval);
-					time_t  D;
-					time(&D);
-					fprintf(F.fconserve," %s\n",ctime(&D));
+					fprintf(F.fconserve," %s",T.day);
+					fprintf(F.fconserve," %s",T.month);
+					fprintf(F.fconserve," %d",T.dym);
+					fprintf(F.fconserve," %d",T.time.h);
+					fprintf(F.fconserve,":%d",T.time.m);
+					fprintf(F.fconserve,":%d",T.time.s);
+					fprintf(F.fconserve," %d\n",T.year);
 					fclose(F.fconserve);
 				}
 			}
@@ -743,9 +767,13 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 					fprintf(F.fconserve," %c",inv);
 					fprintf(F.fconserve," %d",qt);
 					fprintf(F.fconserve," %.3f",inval);
-					time_t  D;
-					time(&D);
-					fprintf(F.fconserve," %s\n",ctime(&D));
+					fprintf(F.fconserve," %s",T.day);
+					fprintf(F.fconserve," %s",T.month);
+					fprintf(F.fconserve," %d",T.dym);
+					fprintf(F.fconserve," %d",T.time.h);
+					fprintf(F.fconserve,":%d",T.time.m);
+					fprintf(F.fconserve,":%d",T.time.s);
+					fprintf(F.fconserve," %d\n",T.year);
 					fclose(F.fconserve);
 				}
 			}
@@ -777,8 +805,699 @@ struct files Select(FILE *f){//retourne 2file qui sont remplis des donnees qu'on
 //noublier pas de les fermer apres les operations
 }
 ////////////////////////////
+//on va cree un select special pour readproducts
+/////////
+struct files SelectREAD(FILE *f){//retourne 2file qui sont remplis des donnees qu'on voulait selectionnes et un autre rempli des donnees a ne pas toucher
+	int i,o,j,test;
+    char w;
+	struct files FL,F;
+	char nm[20],col[20],inv,nmS[20],colS[20],invS,black[]="BLACK",blue[]="BLUE",red[]="RED";
+	float pr,inval,prMX,prMN,invalMX,invalMN;
+	int pid,qt,p,qtS;
+	int ok;
+	short typ,typS;
+	char a[]="A",b[]="B",c[]="C";
+	struct timee T;
+	check:
+	printf("\n\nWHICH serie of products do you wish to use ?");
+	printf("\nGroup by :\n(1)ProductID[UNIQUE]\n(2)name\n(3)price\n(4)color\n(5)type\n(6)Quantity\n(7)inventoryVAL\n");
+	
+	printf("Press the number corresponding to your selection ?");
+	scanf("%d",&i);
+	
+	//F.fselect=fopen("select.txt","w");
+	/*F.fconserve=fopen("conserve.txt","w");
+    fclose(F.fconserve);*/
+	ok=0;
+	fclose(f);
+	switch(i){
+		case 1:
+			
+			label:
+			F.fconserve=fopen("conserve.txt","w");
+    		fclose(F.fconserve);
+			f=fopen("TEST!.txt","r+");
+			printf("Give the product id[UNIQUE]:");
+			scanf("%d",&p);
+			while (fscanf(f,"%d %s %f %s %hd %c %d %f %s %s %d %d:%d:%d %d\n",&pid,&nm,&pr,&col,&typ,&inv,&qt,&inval,&T.day,&T.month,&T.dym,&T.time.h,&T.time.m,&T.time.s,&T.year)!=EOF){//(fscanf(F.fselect,"%d %s %f %s %hd %c %d %f %s %s %d %d:%d:%d %d",&pid,&nm,&pr,&col,&typ,&inv,&qt,&inval,&T.day,&T.month,&T.dym,&T.time.h,&T.time.m,&T.time.s,&T.year)==15){
+				
+				if (pid==p ){
+					ok++;}
+					
+					
+								if ((pid==p )&&(ok==1)){
+								//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
+								F.fselect=fopen("select.txt","w");//w
+								fprintf(F.fselect,"%d",pid);
+								fprintf(F.fselect," %s",nm);
+								fprintf(F.fselect," %.3f",pr);
+								fprintf(F.fselect," %s",col);
+								fprintf(F.fselect," %hd",typ);
+								fprintf(F.fselect," %c",inv);
+								fprintf(F.fselect," %d",qt);
+								fprintf(F.fselect," %.3f",inval);
+								fprintf(F.fselect," %s",T.day);
+								fprintf(F.fselect," %s",T.month);
+								fprintf(F.fselect," %d",T.dym);
+								fprintf(F.fselect," %d",T.time.h);
+								fprintf(F.fselect,":%d",T.time.m);
+								fprintf(F.fselect,":%d",T.time.s);
+								fprintf(F.fselect," %d\n",T.year);
+								fclose(F.fselect);
+						}
+						else{
+								F.fconserve=fopen("conserve.txt","a+");
+								fprintf(F.fconserve,"%d",pid);
+								fprintf(F.fconserve," %s",nm);
+								fprintf(F.fconserve," %.3f",pr);
+								fprintf(F.fconserve," %s",col);
+								fprintf(F.fconserve," %hd",typ);
+								fprintf(F.fconserve," %c",inv);
+								fprintf(F.fconserve," %d",qt);
+								fprintf(F.fconserve," %.3f",inval);
+								fprintf(F.fconserve," %s",T.day);
+								fprintf(F.fconserve," %s",T.month);
+								fprintf(F.fconserve," %d",T.dym);
+								fprintf(F.fconserve," %d",T.time.h);
+								fprintf(F.fconserve,":%d",T.time.m);
+								fprintf(F.fconserve,":%d",T.time.s);
+								fprintf(F.fconserve," %d\n",T.year);
+								fclose(F.fconserve);
+													}
+						
+				
 
+			}
+			if (ok==0){
+				printf("WRONG! non existant product id!!");
+				fclose(f);
+                                    ////////
+                                    printf("\nIf you want to go back to the main menu PRESS(y)!\nIf you want to try again => PRESS any other key\n");
+                        w=getch();
+                        if (toupper(w)=='Y'){
+                            //getch();
+                            menu();
+                        }
+                                    ////////
+                system("cls");
+				goto label;
+			}
+			break;
+		case 2:
+			label1:
+			F.fconserve=fopen("conserve.txt","w");
+                        fclose(F.fconserve);
+			f=fopen("TEST!.txt","r+");
+		        do
+		        {  	printf("Give the product name selection:  ");
+			        scanf("%s",&nmS);
+			        topper(nmS);
+			        for (j=0; j<strlen(nmS); j++)
+			        {	
+				     if(isalpha(nmS[j])){
+					 test = 1;
+				     }
+				     else
+				     {
+					test = 0;
+					break;
+				     }
+			        }
+			        if (test==0)
+			        {
+				        printf(" Please 'Enter' an alphabetic string \n");
+				        getch();		
+			        }
+		        }while(test==0);
+				while (fscanf(f,"%d %s %f %s %hd %c %d %f %s %s %d %d:%d:%d %d\n",&pid,&nm,&pr,&col,&typ,&inv,&qt,&inval,&T.day,&T.month,&T.dym,&T.time.h,&T.time.m,&T.time.s,&T.year)!=EOF){				
+					if (strcmp(nm,nmS) == 0 ){
+					ok++;}
+					
+					
+								if ((strcmp(nm,nmS) == 0 )&&(ok==1)){
+								//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
+								F.fselect=fopen("select.txt","w");//w
+								fprintf(F.fselect,"%d",pid);
+								fprintf(F.fselect," %s",nm);
+								fprintf(F.fselect," %.3f",pr);
+								fprintf(F.fselect," %s",col);
+								fprintf(F.fselect," %hd",typ);
+								fprintf(F.fselect," %c",inv);
+								fprintf(F.fselect," %d",qt);
+								fprintf(F.fselect," %.3f",inval);
+								fprintf(F.fselect," %s",T.day);
+								fprintf(F.fselect," %s",T.month);
+								fprintf(F.fselect," %d",T.dym);
+								fprintf(F.fselect," %d",T.time.h);
+								fprintf(F.fselect,":%d",T.time.m);
+								fprintf(F.fselect,":%d",T.time.s);
+								fprintf(F.fselect," %d\n",T.year);
+								fclose(F.fselect);
+						}
+						else{
+						
+				if (strcmp(nm,nmS) == 0 ){// Les deux cha?nes sont ?gales si vrai
+					
+					F.fselect=fopen("select.txt","a+");
+					fprintf(F.fselect,"%d",pid);
+					fprintf(F.fselect," %s",nm);
+					fprintf(F.fselect," %.3f",pr);
+					fprintf(F.fselect," %s",col);
+					fprintf(F.fselect," %hd",typ);
+					fprintf(F.fselect," %c",inv);
+					fprintf(F.fselect," %d",qt);
+					fprintf(F.fselect," %.3f",inval);
+								fprintf(F.fselect," %s",T.day);
+								fprintf(F.fselect," %s",T.month);
+								fprintf(F.fselect," %d",T.dym);
+								fprintf(F.fselect," %d",T.time.h);
+								fprintf(F.fselect,":%d",T.time.m);
+								fprintf(F.fselect,":%d",T.time.s);
+								fprintf(F.fselect," %d\n",T.year);
+					fclose(F.fselect);
+				}
+				else{
+				F.fconserve=fopen("conserve.txt","a+");
+					fprintf(F.fconserve,"%d",pid);
+					fprintf(F.fconserve," %s",nm);
+					fprintf(F.fconserve," %.3f",pr);
+					fprintf(F.fconserve," %s",col);
+					fprintf(F.fconserve," %hd",typ);
+					fprintf(F.fconserve," %c",inv);
+					fprintf(F.fconserve," %d",qt);
+					fprintf(F.fconserve," %.3f",inval);
+					fprintf(F.fconserve," %s",T.day);
+					fprintf(F.fconserve," %s",T.month);
+					fprintf(F.fconserve," %d",T.dym);
+					fprintf(F.fconserve," %d",T.time.h);
+					fprintf(F.fconserve,":%d",T.time.m);
+					fprintf(F.fconserve,":%d",T.time.s);
+					fprintf(F.fconserve," %d\n",T.year);
+					fclose(F.fconserve);
+				}
+			}
+			}
+			if (ok==0){
+				printf("WRONG non existant product name!!");
+				fclose(f);
+                                    ////////
+                                    printf("\nIf you want to go back to the main menu PRESS(y)!\nIf you want to try again => PRESS any other key\n");
+                        w=getch();
+                        
+                        if (toupper(w)=='Y'){
+                            //getch();
+                            menu();
+                        }
+                                    ////////
+                system("cls");
+				goto label1;
+			}
+			break;
+		case 3:
+			label2:
+			F.fconserve=fopen("conserve.txt","w");
+    fclose(F.fconserve);
+			f=fopen("TEST!.txt","r+");
+			printf("Give Minimum price of the product selection : ");
+			scanf("%f",&prMN);
+			printf("Give Maximum price of the product selection : ");
+			scanf("%f",&prMX);
+			
+			while (fscanf(f,"%d %s %f %s %hd %c %d %f %s %s %d %d:%d:%d %d\n",&pid,&nm,&pr,&col,&typ,&inv,&qt,&inval,&T.day,&T.month,&T.dym,&T.time.h,&T.time.m,&T.time.s,&T.year)!=EOF){
+			if ((pr>=prMN )&&(pr<=prMX)){
+					ok++;}
+					
+					
+								if ((pr>=prMN )&&(pr<=prMX)&&(ok==1)){
+								//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
+								F.fselect=fopen("select.txt","w");//w
+								fprintf(F.fselect,"%d",pid);
+								fprintf(F.fselect," %s",nm);
+								fprintf(F.fselect," %.3f",pr);
+								fprintf(F.fselect," %s",col);
+								fprintf(F.fselect," %hd",typ);
+								fprintf(F.fselect," %c",inv);
+								fprintf(F.fselect," %d",qt);
+								fprintf(F.fselect," %.3f",inval);
+								fprintf(F.fselect," %s",T.day);
+								fprintf(F.fselect," %s",T.month);
+								fprintf(F.fselect," %d",T.dym);
+								fprintf(F.fselect," %d",T.time.h);
+								fprintf(F.fselect,":%d",T.time.m);
+								fprintf(F.fselect,":%d",T.time.s);
+								fprintf(F.fselect," %d\n",T.year);
+								fclose(F.fselect);
+						}
+						else{	
+			
+				
+				if ((pr>=prMN )&&(pr<=prMX)){
+					
+					F.fselect=fopen("select.txt","a+");
+					fprintf(F.fselect,"%d",pid);
+					fprintf(F.fselect," %s",nm);
+					fprintf(F.fselect," %.3f",pr);
+					fprintf(F.fselect," %s",col);
+					fprintf(F.fselect," %hd",typ);
+					fprintf(F.fselect," %c",inv);
+					fprintf(F.fselect," %d",qt);
+					fprintf(F.fselect," %.3f",inval);
+										fprintf(F.fselect," %s",T.day);
+								fprintf(F.fselect," %s",T.month);
+								fprintf(F.fselect," %d",T.dym);
+								fprintf(F.fselect," %d",T.time.h);
+								fprintf(F.fselect,":%d",T.time.m);
+								fprintf(F.fselect,":%d",T.time.s);
+								fprintf(F.fselect," %d\n",T.year);
+					fclose(F.fselect);
+				}
+				else{
+					F.fconserve=fopen("conserve.txt","a+");
+					fprintf(F.fconserve,"%d",pid);
+					fprintf(F.fconserve," %s",nm);
+					fprintf(F.fconserve," %.3f",pr);
+					fprintf(F.fconserve," %s",col);
+					fprintf(F.fconserve," %hd",typ);
+					fprintf(F.fconserve," %c",inv);
+					fprintf(F.fconserve," %d",qt);
+					fprintf(F.fconserve," %.3f",inval);
+					fprintf(F.fconserve," %s",T.day);
+					fprintf(F.fconserve," %s",T.month);
+					fprintf(F.fconserve," %d",T.dym);
+					fprintf(F.fconserve," %d",T.time.h);
+					fprintf(F.fconserve,":%d",T.time.m);
+					fprintf(F.fconserve,":%d",T.time.s);
+					fprintf(F.fconserve," %d\n",T.year);
+					fclose(F.fconserve);
+				}
+			}
+			}
+			if (ok==0){
+				printf("Inavailable products,TRY another scale!!");
+				fclose(f);
+                                    ////////
+                                    printf("\nIf you want to go back to the main menu PRESS(y)!\nIf you want to try again => PRESS any other key\n");
+                        w=getch();
+                        if (toupper(w)=='Y'){
+                            //getch();
+                            menu();
+                        }
+                                    ////////
+                system("cls");
+				goto label2;
+			}
+			break;
+		case 4:
+			label3:
+			F.fconserve=fopen("conserve.txt","w");
+    fclose(F.fconserve);
+			f=fopen("TEST!.txt","r+");
+			do{
+			printf("Give the product color[BLUE,BLACK,RED] selection: ");
+			scanf("%s",&colS);
+			topper(colS);
+			//printf("%d\n",((strcmp(colS,black)!=0)&&(strcmp(colS,red)!=0)&&(strcmp(colS,blue)!=0)));
+			}
+			while ((strcmp(colS,black)!=0)&&(strcmp(colS,red)!=0)&&(strcmp(colS,blue)!=0));// strcmp peut donner -1!!!!!!!!!!!!1
+			
+			while (fscanf(f,"%d %s %f %s %hd %c %d %f %s %s %d %d:%d:%d %d\n",&pid,&nm,&pr,&col,&typ,&inv,&qt,&inval,&T.day,&T.month,&T.dym,&T.time.h,&T.time.m,&T.time.s,&T.year)!=EOF){
+				if (strcmp(colS,col)==0 ){
+					ok++;}
+					
+					
+								if ((strcmp(colS,col)==0 )&&(ok==1)){
+								//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
+								F.fselect=fopen("select.txt","w");//w
+								fprintf(F.fselect,"%d",pid);
+								fprintf(F.fselect," %s",nm);
+								fprintf(F.fselect," %.3f",pr);
+								fprintf(F.fselect," %s",col);
+								fprintf(F.fselect," %hd",typ);
+								fprintf(F.fselect," %c",inv);
+								fprintf(F.fselect," %d",qt);
+								fprintf(F.fselect," %.3f",inval);
+								fprintf(F.fselect," %s",T.day);
+								fprintf(F.fselect," %s",T.month);
+								fprintf(F.fselect," %d",T.dym);
+								fprintf(F.fselect," %d",T.time.h);
+								fprintf(F.fselect,":%d",T.time.m);
+								fprintf(F.fselect,":%d",T.time.s);
+								fprintf(F.fselect," %d\n",T.year);
+								fclose(F.fselect);
+						}
+						else{	
+	
+				
+				if (strcmp(colS,col)==0 ){
+					
+					F.fselect=fopen("select.txt","a+");
+					fprintf(F.fselect,"%d",pid);
+					fprintf(F.fselect," %s",nm);
+					fprintf(F.fselect," %.3f",pr);
+					fprintf(F.fselect," %s",col);
+					fprintf(F.fselect," %hd",typ);
+					fprintf(F.fselect," %c",inv);
+					fprintf(F.fselect," %d",qt);
+					fprintf(F.fselect," %.3f",inval);
+								fprintf(F.fselect," %s",T.day);
+								fprintf(F.fselect," %s",T.month);
+								fprintf(F.fselect," %d",T.dym);
+								fprintf(F.fselect," %d",T.time.h);
+								fprintf(F.fselect,":%d",T.time.m);
+								fprintf(F.fselect,":%d",T.time.s);
+								fprintf(F.fselect," %d\n",T.year);
+					fclose(F.fselect);
+				}
+				else{
+					F.fconserve=fopen("conserve.txt","a+");
+					fprintf(F.fconserve,"%d",pid);
+					fprintf(F.fconserve," %s",nm);
+					fprintf(F.fconserve," %.3f",pr);
+					fprintf(F.fconserve," %s",col);
+					fprintf(F.fconserve," %hd",typ);
+					fprintf(F.fconserve," %c",inv);
+					fprintf(F.fconserve," %d",qt);
+					fprintf(F.fconserve," %.3f",inval);
+					fprintf(F.fconserve," %s",T.day);
+					fprintf(F.fconserve," %s",T.month);
+					fprintf(F.fconserve," %d",T.dym);
+					fprintf(F.fconserve," %d",T.time.h);
+					fprintf(F.fconserve,":%d",T.time.m);
+					fprintf(F.fconserve,":%d",T.time.s);
+					fprintf(F.fconserve," %d\n",T.year);
+					fclose(F.fconserve);
+				}
+			}
+			}
+			if (ok==0){
+				printf("Wrong non existant product in such color !!");
+				fclose(f);
+                                    ////////
+                                    printf("\nIf you want to go back to the main menu PRESS(y)!\nIf you want to try again => PRESS any other key\n");
+                        w=getch();
+                        if (toupper(w)=='Y'){
+                            //getch();
+                            menu();
+                        }
+                                    ////////
+                system("cls");
+				goto label3;
+			}
+			break;
+		case 5:
+			label4:
+			F.fconserve=fopen("conserve.txt","w");
+    fclose(F.fconserve);
+			f=fopen("TEST!.txt","r+");
+			do{
+			
+			printf("Give the product type[1,2,3] selection :");
+			scanf("%hd",&typS);
+			}
+			while ((typS!=1)&&(typS!=2)&&(typS!=3));
+			while (fscanf(f,"%d %s %f %s %hd %c %d %f %s %s %d %d:%d:%d %d\n",&pid,&nm,&pr,&col,&typ,&inv,&qt,&inval,&T.day,&T.month,&T.dym,&T.time.h,&T.time.m,&T.time.s,&T.year)!=EOF){
+					if (typ==typS ){
+					ok++;}
+					
+					
+								if ((typ==typS )&&(ok==1)){
+								//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
+								F.fselect=fopen("select.txt","w");//w
+								fprintf(F.fselect,"%d",pid);
+								fprintf(F.fselect," %s",nm);
+								fprintf(F.fselect," %.3f",pr);
+								fprintf(F.fselect," %s",col);
+								fprintf(F.fselect," %hd",typ);
+								fprintf(F.fselect," %c",inv);
+								fprintf(F.fselect," %d",qt);
+								fprintf(F.fselect," %.3f",inval);
+								fprintf(F.fselect," %s",T.day);
+								fprintf(F.fselect," %s",T.month);
+								fprintf(F.fselect," %d",T.dym);
+								fprintf(F.fselect," %d",T.time.h);
+								fprintf(F.fselect,":%d",T.time.m);
+								fprintf(F.fselect,":%d",T.time.s);
+								fprintf(F.fselect," %d\n",T.year);
+								fclose(F.fselect);
+						}
+						else{	
+				
+				if (typ==typS ){
+					
+					F.fselect=fopen("select.txt","a+");
+					fprintf(F.fselect,"%d",pid);
+					fprintf(F.fselect," %s",nm);
+					fprintf(F.fselect," %.3f",pr);
+					fprintf(F.fselect," %s",col);
+					fprintf(F.fselect," %hd",typ);
+					fprintf(F.fselect," %c",inv);
+					fprintf(F.fselect," %d",qt);
+					fprintf(F.fselect," %.3f",inval);
+								fprintf(F.fselect," %s",T.day);
+								fprintf(F.fselect," %s",T.month);
+								fprintf(F.fselect," %d",T.dym);
+								fprintf(F.fselect," %d",T.time.h);
+								fprintf(F.fselect,":%d",T.time.m);
+								fprintf(F.fselect,":%d",T.time.s);
+								fprintf(F.fselect," %d\n",T.year);
+					fclose(F.fselect);
+				}
+				else{
+				F.fconserve=fopen("conserve.txt","a+");
+					fprintf(F.fconserve,"%d",pid);
+					fprintf(F.fconserve," %s",nm);
+					fprintf(F.fconserve," %.3f",pr);
+					fprintf(F.fconserve," %s",col);
+					fprintf(F.fconserve," %hd",typ);
+					fprintf(F.fconserve," %c",inv);
+					fprintf(F.fconserve," %d",qt);
+					fprintf(F.fconserve," %.3f",inval);
+					fprintf(F.fconserve," %s",T.day);
+					fprintf(F.fconserve," %s",T.month);
+					fprintf(F.fconserve," %d",T.dym);
+					fprintf(F.fconserve," %d",T.time.h);
+					fprintf(F.fconserve,":%d",T.time.m);
+					fprintf(F.fconserve,":%d",T.time.s);
+					fprintf(F.fconserve," %d\n",T.year);
+					fclose(F.fconserve);
+				}
+			}
+			}
+			if (ok==0){
+				printf("No existant product in type!!");
+				fclose(f);
+                                    ////////
+                                    printf("\nIf you want to go back to the main menu PRESS(y)!\nIf you want to try again => PRESS any other key\n");
+                        w=getch();
+                        if (toupper(w)=='Y'){
+                            //getch();
+                            menu();
+                        }
+                                    ////////
+                system("cls");
+				goto label4;
+			}
+			break;
+		
+		case 6:
+			label6:
+			F.fconserve=fopen("conserve.txt","w");
+    fclose(F.fconserve);
+			f=fopen("TEST!.txt","r+");
+			do{
 
+			printf("Give Minimum quantity of products selection : ");
+			scanf("%d",&qtS);}
+			while(qtS<0);
+		
+			while (fscanf(f,"%d %s %f %s %hd %c %d %f %s %s %d %d:%d:%d %d\n",&pid,&nm,&pr,&col,&typ,&inv,&qt,&inval,&T.day,&T.month,&T.dym,&T.time.h,&T.time.m,&T.time.s,&T.year)!=EOF){
+			if (qt >=qtS ){
+					ok++;}
+					
+					
+								if ((qtS <=qt ) &&(ok==1)){
+								//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
+								F.fselect=fopen("select.txt","w");//w
+								fprintf(F.fselect,"%d",pid);
+								fprintf(F.fselect," %s",nm);
+								fprintf(F.fselect," %.3f",pr);
+								fprintf(F.fselect," %s",col);
+								fprintf(F.fselect," %hd",typ);
+								fprintf(F.fselect," %c",inv);
+								fprintf(F.fselect," %d",qt);
+								fprintf(F.fselect," %.3f",inval);
+								fprintf(F.fselect," %s",T.day);
+								fprintf(F.fselect," %s",T.month);
+								fprintf(F.fselect," %d",T.dym);
+								fprintf(F.fselect," %d",T.time.h);
+								fprintf(F.fselect,":%d",T.time.m);
+								fprintf(F.fselect,":%d",T.time.s);
+								fprintf(F.fselect," %d\n",T.year);
+								fclose(F.fselect);
+						}
+						else{	
+				if (qtS <=qt ){
+					
+				F.fselect=fopen("select.txt","a+");
+					fprintf(F.fselect,"%d",pid);
+					fprintf(F.fselect," %s",nm);
+					fprintf(F.fselect," %.3f",pr);
+					fprintf(F.fselect," %s",col);
+					fprintf(F.fselect," %hd",typ);
+					fprintf(F.fselect," %c",inv);
+					fprintf(F.fselect," %d",qt);
+					fprintf(F.fselect," %.3f",inval);
+								fprintf(F.fselect," %s",T.day);
+								fprintf(F.fselect," %s",T.month);
+								fprintf(F.fselect," %d",T.dym);
+								fprintf(F.fselect," %d",T.time.h);
+								fprintf(F.fselect,":%d",T.time.m);
+								fprintf(F.fselect,":%d",T.time.s);
+								fprintf(F.fselect," %d\n",T.year);
+					fclose(F.fselect);
+				}
+				else{
+					F.fconserve=fopen("conserve.txt","a+");
+					fprintf(F.fconserve,"%d",pid);
+					fprintf(F.fconserve," %s",nm);
+					fprintf(F.fconserve," %.3f",pr);
+					fprintf(F.fconserve," %s",col);
+					fprintf(F.fconserve," %hd",typ);
+					fprintf(F.fconserve," %c",inv);
+					fprintf(F.fconserve," %d",qt);
+					fprintf(F.fconserve," %.3f",inval);
+					fprintf(F.fconserve," %s",T.day);
+					fprintf(F.fconserve," %s",T.month);
+					fprintf(F.fconserve," %d",T.dym);
+					fprintf(F.fconserve," %d",T.time.h);
+					fprintf(F.fconserve,":%d",T.time.m);
+					fprintf(F.fconserve,":%d",T.time.s);
+					fprintf(F.fconserve," %d\n",T.year);
+					fclose(F.fconserve);
+				}
+			}
+			}
+			if (ok==0){
+				printf("Not enough product for the required quantity ");
+				fclose(f);
+                                    ////////
+                                    printf("\nIf you want to go back to the main menu PRESS(y)!\nIf you want to try again => PRESS any other key\n");
+                        w=getch();
+                        if (toupper(w)=='Y'){
+                            //getch();
+                            menu();
+                        }
+                                    ////////
+                system("cls");
+				goto label6;
+			}
+			break;
+		case 7:
+			label7:
+			F.fconserve=fopen("conserve.txt","w");
+    fclose(F.fconserve);
+			f=fopen("TEST!.txt","r+");
+			printf("give minimum inventory value selection :");
+			scanf("%f",&invalMN);
+			printf("give maximum inventory value selection :");
+			scanf("%f",&invalMX);
+			
+			while (fscanf(f,"%d %s %f %s %hd %c %d %f %s %s %d %d:%d:%d %d\n",&pid,&nm,&pr,&col,&typ,&inv,&qt,&inval,&T.day,&T.month,&T.dym,&T.time.h,&T.time.m,&T.time.s,&T.year)!=EOF){
+				
+			if ((inval>=invalMN)&&(inval<=invalMX)){
+					ok++;}
+					
+					
+								if ((inval>=invalMN)&&(inval<=invalMX) &&(ok==1)){
+								//on doit etre sur que ce nouveau ficher va etre rempli par des nouveaux elements qui satisfaient les sorts
+								F.fselect=fopen("select.txt","w");//w
+								fprintf(F.fselect,"%d",pid);
+								fprintf(F.fselect," %s",nm);
+								fprintf(F.fselect," %.3f",pr);
+								fprintf(F.fselect," %s",col);
+								fprintf(F.fselect," %hd",typ);
+								fprintf(F.fselect," %c",inv);
+								fprintf(F.fselect," %d",qt);
+								fprintf(F.fselect," %.3f",inval);
+								fprintf(F.fselect," %s",T.day);
+								fprintf(F.fselect," %s",T.month);
+								fprintf(F.fselect," %d",T.dym);
+								fprintf(F.fselect," %d",T.time.h);
+								fprintf(F.fselect,":%d",T.time.m);
+								fprintf(F.fselect,":%d",T.time.s);
+								fprintf(F.fselect," %d\n",T.year);
+								fclose(F.fselect);
+						}
+						else{	
+				
+				if ((inval>=invalMN)&&(inval<=invalMX) ){
+					
+					F.fselect=fopen("select.txt","a+");
+					fprintf(F.fselect,"%d",pid);
+					fprintf(F.fselect," %s",nm);
+					fprintf(F.fselect," %.3f",pr);
+					fprintf(F.fselect," %s",col);
+					fprintf(F.fselect," %hd",typ);
+					fprintf(F.fselect," %c",inv);
+					fprintf(F.fselect," %d",qt);
+					fprintf(F.fselect," %.3f",inval);
+								fprintf(F.fselect," %s",T.day);
+								fprintf(F.fselect," %s",T.month);
+								fprintf(F.fselect," %d",T.dym);
+								fprintf(F.fselect," %d",T.time.h);
+								fprintf(F.fselect,":%d",T.time.m);
+								fprintf(F.fselect,":%d",T.time.s);
+								fprintf(F.fselect," %d\n",T.year);
+					fclose(F.fselect);
+				}
+				else{
+					F.fconserve=fopen("conserve.txt","a+");
+					fprintf(F.fconserve,"%d",pid);
+					fprintf(F.fconserve," %s",nm);
+					fprintf(F.fconserve," %.3f",pr);
+					fprintf(F.fconserve," %s",col);
+					fprintf(F.fconserve," %hd",typ);
+					fprintf(F.fconserve," %c",inv);
+					fprintf(F.fconserve," %d",qt);
+					fprintf(F.fconserve," %.3f",inval);
+					fprintf(F.fconserve," %s",T.day);
+					fprintf(F.fconserve," %s",T.month);
+					fprintf(F.fconserve," %d",T.dym);
+					fprintf(F.fconserve," %d",T.time.h);
+					fprintf(F.fconserve,":%d",T.time.m);
+					fprintf(F.fconserve,":%d",T.time.s);
+					fprintf(F.fconserve," %d\n",T.year);
+					fclose(F.fconserve);
+				}
+			}
+			}
+			if (ok==0){
+				printf("Wrong non existant product id!!");
+				fclose(f);
+                                    ////////
+                                    printf("\nIf you want to go back to the main menu PRESS(y)!\nIf you want to try again => PRESS any other key\n");
+                        w=getch();
+                        if (toupper(w)=='Y'){
+                            //getch();
+                            menu();
+                        }
+                                    ////////
+                system("cls");
+				goto label7;
+			}
+			break;
+		default :	
+						system("cls");
+						printf("INVALID choice !\n");
+						goto check;	
+	}
+	
+		F.fselect=fopen("select.txt","r+");
+		F.fconserve=fopen("conserve.txt","a+");
+		return(F);
+//noublier pas de les fermer apres les operations
+}
+////////////////////////////////
 void show(FILE *f){
     int i, q;
     struct timee T;
@@ -942,7 +1661,7 @@ void read_products(){
 		
 			printf("PRESS any key to select products that you want to READ : ");
 			getch();
-			F=Select(f);
+			F=SelectREAD(f);
 			fclose(F.fselect);
 		fclose(F.fconserve);
 		fclose(f);
