@@ -35,54 +35,50 @@
  
 **<p> welcome page : </p>**
 
-<img width="1000" alt="1" src="https://user-images.githubusercontent.com/120915561/209748412-7293504f-5f1a-4dca-9d4d-85ceccc9af48.png">
+<img width="960" alt="Capture d'écran_20221231_120147" src="https://user-images.githubusercontent.com/120915561/210134979-9315fd23-bccd-4201-92db-ab5a6e3f0eed.png">
 
 **<p> main menu : </p>**
 
-<img width="1000" alt="2" src="https://user-images.githubusercontent.com/120915561/209748432-0829d735-03a5-401d-aade-c033aa27e19a.png">
+<img width="960" alt="Capture d'écran_20221231_120119" src="https://user-images.githubusercontent.com/120915561/210134978-09c95331-c1c3-4ec9-bc3d-a578bacb038f.png">
  
  ### add new products : 
-<img width="1000" alt="3" src="https://user-images.githubusercontent.com/120915561/209748603-f482d8d2-0651-438a-a48a-6552956a242c.png">
 
-<img width="1000" alt="4" src="https://user-images.githubusercontent.com/120915561/209748668-9aba6829-f729-42b5-b9f0-ab3ed658df37.png">
-<img width="1000" alt="5" src="https://user-images.githubusercontent.com/120915561/209748694-304c4085-80a7-4771-aef2-d7ab707dd416.png">
+<img width="960" alt="Capture d'écran_20221231_120455" src="https://user-images.githubusercontent.com/120915561/210134980-63763418-3165-48d0-b9ae-940dc478a56b.png">
+<img width="960" alt="Capture d'écran_20221231_121259" src="https://user-images.githubusercontent.com/120915561/210134981-ba2775a5-0d54-4120-a06f-17328ce36a29.png">
+<img width="960" alt="Capture d'écran_20221231_121333" src="https://user-images.githubusercontent.com/120915561/210134984-0c134c5b-df48-494b-917e-6361b28f31a2.png">
 
  ### show database : 
- <img width="1000" alt="6" src="https://user-images.githubusercontent.com/120915561/209748765-0ad52244-61b1-4194-9bf8-cfef81d5b426.png">
-<img width="1000" alt="7" src="https://user-images.githubusercontent.com/120915561/209748770-45b7c501-ce29-4b81-89dc-913de6ad964b.png">
+<img width="960" alt="Capture d'écran_20221231_121323" src="https://user-images.githubusercontent.com/120915561/210134983-89299af4-e07b-468e-ad9a-ec826fd09f5b.png">
+<img width="960" alt="Capture d'écran_20221231_121333" src="https://user-images.githubusercontent.com/120915561/210134984-0c134c5b-df48-494b-917e-6361b28f31a2.png">
 
 ### show  products by selection : 
  **<p> This is an exemple of show by selection using productId </p>**
 
-
-<img width="844" alt="Capture d'écran_20221229_180326" src="https://user-images.githubusercontent.com/120915561/209986291-d5b6447f-64aa-4d72-829d-6d7cf598a861.png">
-<img width="827" alt="Capture d'écran_20221229_180409" src="https://user-images.githubusercontent.com/120915561/209986193-958394ba-0a85-43e8-89d3-bcffb1a5d721.png">
-<img width="834" alt="Capture d'écran_20221229_180417" src="https://user-images.githubusercontent.com/120915561/209986200-4eece0a2-80a6-42a4-93ac-78630494d59c.png">
+<img width="960" alt="Capture d'écran_20221231_121436" src="https://user-images.githubusercontent.com/120915561/210134985-4fc3dd7c-3ee6-4ff3-81b3-ed7ccb5a481f.png">
+<img width="960" alt="Capture d'écran_20221231_121455" src="https://user-images.githubusercontent.com/120915561/210134987-fde02b22-70cf-4e30-b44e-0b1b8be0a452.png">
+<img width="960" alt="Capture d'écran_20221231_121502" src="https://user-images.githubusercontent.com/120915561/210134974-5273520f-a7d3-4517-bc34-081ac6c89a55.png">
 
  ### Delete products by selection  : 
  **<p> Here an exemple of database </p>**
-<img width="1000" alt="init" src="https://user-images.githubusercontent.com/120915561/209980309-f7b63ecb-9ff5-46db-baa2-c0559d1382bd.png">
+<img width="960" alt="Capture d'écran_20221231_125253" src="https://user-images.githubusercontent.com/120915561/210135788-887b5b07-4f35-43a2-aae2-0a308074f34d.png">
 
-<img width="1000" alt="init2" src="https://user-images.githubusercontent.com/120915561/209980311-ec7f7d25-6e32-41ba-9886-788835b11009.png">
+<img width="960" alt="Capture d'écran_20221231_130336" src="https://user-images.githubusercontent.com/120915561/210136171-1ffeccd3-09d9-4365-8f85-ba30201a3c86.png">
+<img width="960" alt="Capture d'écran_20221231_130536" src="https://user-images.githubusercontent.com/120915561/210136174-7cde8f3e-8e08-4fdf-b580-fe2b24bb9603.png">
 
-<img width="1000" alt="init3 (1)" src="https://user-images.githubusercontent.com/120915561/209980314-57bf66c2-fe7b-4003-ba53-40e0f7e8365c.png">
-
-<img width="1000" alt="init3 (3)" src="https://user-images.githubusercontent.com/120915561/209980304-cfef4365-53cd-4f10-a78f-815747b8bd17.png">
+<img width="960" alt="Capture d'écran_20221231_130448" src="https://user-images.githubusercontent.com/120915561/210136173-b58fd033-fb91-46e0-b046-5a09d2b1a14f.png">
 
 **<p> Products deleted successfully </p>**
 
-<img width="1000" alt="init4" src="https://user-images.githubusercontent.com/120915561/209980306-13788f7e-87d1-4e71-b790-e59b465eb1f9.png">
+<img width="960" alt="Capture d'écran_20221231_130754" src="https://user-images.githubusercontent.com/120915561/210136199-a9b86ed2-ca84-43b2-9e57-26dd6260e6ee.png">
 
 **<p> This is an exemple of delete by selection using price </p>**
 
 **<p> We can also delete products selected by ID, Name, Color, Type, quantity and inventory value </p>**
 
  ### Delete all products :
- <img width="1000" alt="Capture d'écran_20221229_152634" src="https://user-images.githubusercontent.com/120915561/209967262-b0e4babf-e0db-45d9-b11d-15670c4349b1.png">
- 
-![1](https://user-images.githubusercontent.com/120915561/209966419-0c4b0773-2f62-48d9-835f-14a011c3e88b.jpg)
-
-![321244015_654810176392718_6513458245837784287_n](https://user-images.githubusercontent.com/120915561/209966423-5498df38-7556-4e79-a471-3b9d0b7705f5.jpg)
+<img width="960" alt="Capture d'écran_20221231_121516" src="https://user-images.githubusercontent.com/120915561/210134976-ddfc6c90-d8b3-401e-815e-dbfecceccccc.png">
+<img width="960" alt="Capture d'écran_20221231_130950" src="https://user-images.githubusercontent.com/120915561/210136253-4377ca5f-402e-472d-9aef-4316c75591fe.png">
+<img width="960" alt="Capture d'écran_20221231_131009" src="https://user-images.githubusercontent.com/120915561/210136255-5f4bf766-73f3-4afd-b1c0-0855012ef1e8.png">
 
 **<p> No records </p>**
 
@@ -90,35 +86,38 @@
  ### Update products by selection :
  **<p> Here an exemple of database that we are going to update </p>**
  
-![exemple](https://user-images.githubusercontent.com/120915561/209971388-c7c8ff74-1504-4937-ba04-5ac9a7653235.jpg)
+<img width="960" alt="deb" src="https://user-images.githubusercontent.com/120915561/210135436-54cf0b35-7227-44b8-a449-36936c81e388.png">
+<img width="960" alt="1" src="https://user-images.githubusercontent.com/120915561/210135440-e7d154ab-da76-45b0-b812-7209516e9702.png">
+<img width="960" alt="2" src="https://user-images.githubusercontent.com/120915561/210135442-d2d9037c-1af0-49aa-8f61-bbcd42d7b872.png">
+<img width="960" alt="3" src="https://user-images.githubusercontent.com/120915561/210135444-ff99bc6b-3406-4bf5-b187-2580f79bf2e9.png">
+<img width="960" alt="fin" src="https://user-images.githubusercontent.com/120915561/210135447-bd330b93-02e0-4467-8031-ced8de6c5109.png">
 
-<img width="1000" alt="Capture d'écran_20221229_154203" src="https://user-images.githubusercontent.com/120915561/209971738-5c30c1cf-f613-4882-8e10-9e692496b4f1.png">
- 
- 
-![321094724_502181982048642_4735985158223043217_n](https://user-images.githubusercontent.com/120915561/209968520-107bc498-8a46-4c81-aa2c-f4292c609c48.jpg)
-![13](https://user-images.githubusercontent.com/120915561/209969911-bb9b765b-052a-474f-a7f6-d16c26f4dc2e.jpg)
-
-
-![321299773_840334740404153_8526625473827025728_n](https://user-images.githubusercontent.com/120915561/209968525-aa643901-69f3-4cbc-80f8-1064a1ff2273.jpg)
  **<p> This is an exemple of update by selection using name </p>**
 **<p> We can also update products selected by ID, Name, Color, Price, Type, quantity and inventory value </p>** 
 
  ### Update all products :
  
- 
- <img width="1000" alt="A (1)" src="https://user-images.githubusercontent.com/120915561/209976507-ba8cd41e-0fa3-4a52-be33-a31d5a40e6b4.png">
-<img width="1000" alt="A (2)" src="https://user-images.githubusercontent.com/120915561/209976511-59d2726a-374e-4f69-a16f-4dc4b5f87722.png">
-<img width="1000" alt="A (3)" src="https://user-images.githubusercontent.com/120915561/209976513-2a163636-a484-430c-85fc-8ffc4d6541af.png">
+ <img width="960" alt="fin" src="https://user-images.githubusercontent.com/120915561/210135447-bd330b93-02e0-4467-8031-ced8de6c5109.png">
+
+<img width="960" alt="1" src="https://user-images.githubusercontent.com/120915561/210135440-e7d154ab-da76-45b0-b812-7209516e9702.png">
+
+<img width="960" alt="Capture d'écran_20221231_125239" src="https://user-images.githubusercontent.com/120915561/210135787-faafb370-82f6-4dce-80c0-bb81dd410112.png">
+<img width="960" alt="Capture d'écran_20221231_125253" src="https://user-images.githubusercontent.com/120915561/210135788-887b5b07-4f35-43a2-aae2-0a308074f34d.png">
 
  **<p> Changes are applied to all products </p>**
-**<p> We can also change all products' Name, Price, Type & quantity  </p>** 
+**<p> We can also change all products' Name, ,Price, Color & quantity  </p>** 
+
+### Operation History :
+<img width="960" alt="Capture d'écran_20221231_125630" src="https://user-images.githubusercontent.com/120915561/210135864-3df2598a-fd00-4a8e-bb8e-6988b23a629f.png">
+
+<img width="960" alt="Capture d'écran_20221231_125642" src="https://user-images.githubusercontent.com/120915561/210135865-08e2b908-d045-429b-959d-a37480223288.png">
 
  ### EXIT :
   
-**<p> Exit if you type a key other than {1,2,3,4,5,6}  <p/>** 
+**<p> Exit if you type a key other than {1,2,3,4,5,6,7}  <p/>** 
  
-<img width="1000" alt="Capture d'écran_20221229_165222" src="https://user-images.githubusercontent.com/120915561/209978313-e855b847-b9e4-49d5-aee3-ede16434c1b3.png">
-<img width="1000" alt="Capture d'écran_20221229_165230" src="https://user-images.githubusercontent.com/120915561/209978317-0216c7bd-b569-4cf4-8ae4-ad59989efe4e.png">
+<img width="960" alt="Capture d'écran_20221231_125827" src="https://user-images.githubusercontent.com/120915561/210135905-fb8b6fd9-e819-4dbd-87fa-1b5061e3686e.png">
+<img width="960" alt="Capture d'écran_20221231_125838" src="https://user-images.githubusercontent.com/120915561/210135907-cd4b39e7-7955-409d-a44d-9c71362afca1.png">
 
 <p/>
 
