@@ -1654,7 +1654,7 @@ gotoxy(0,5);
 		gotoxy(37,6);
 		printf("Type");
 		gotoxy(44,6);
-		printf("Inventorty");
+		printf("Inventory");
 		gotoxy(57,6);
 		printf("Quantity");
 		gotoxy(69,6);
@@ -2177,7 +2177,7 @@ void read_Product_ALL(){
 		gotoxy(37,6);
 		printf("Type");
 		gotoxy(44,6);
-		printf("Inventorty");
+		printf("Inventory");
 		gotoxy(57,6);
 		printf("Quantity");
 		gotoxy(69,6);
