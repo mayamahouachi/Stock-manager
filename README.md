@@ -13,7 +13,7 @@
 - **Show** database.
 - **Delete** all items. 
 - **Delete** items by selection.
-- - **See** operational history.
+- **See** operational history.
 
 
 ## Deployment:
